@@ -1,0 +1,11 @@
+
+---Downloaded files---
+The import files for: eCommerce Market were successfully downloaded!
+Initial max execution time = 259200
+Files info:
+Site URL = http://localhost/brogaard
+Data file = /var/www/html/brogaard/wp-content/uploads/2018/04/demo-content-import-file_2018-04-30__13-22-26.xml
+Widget file = /var/www/html/brogaard/wp-content/uploads/2018/04/demo-widgets-import-file_2018-04-30__13-22-26.json
+Customizer file = /var/www/html/brogaard/wp-content/uploads/2018/04/demo-customizer-import-file_2018-04-30__13-22-26.dat
+Redux files:
+not defined!
