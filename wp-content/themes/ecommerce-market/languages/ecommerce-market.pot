@@ -1,0 +1,345 @@
+# Copyright (C) 2017 Rigorous Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator:\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: inc/customizer/home-section.php:76
+msgid "No of Slides"
+msgstr ""
+
+#: inc/customizer/home-section.php:97
+msgid "Featured Category"
+msgstr ""
+
+#: inc/customizer/home-section.php:98
+msgid "Featured Product Category"
+msgstr ""
+
+#: inc/customizer/home-section.php:114
+msgid "Select Category"
+msgstr ""
+
+#: inc/customizer/home-section.php:134
+msgid "Select Product Category"
+msgstr ""
+
+#: inc/customizer/home-section.php:154
+msgid "Read More Text"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:386
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:387
+#: inc/ecommerce-market-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:388
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/ecommerce-market-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/hook/basic.php:48 inc/hook/basic.php:83
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: inc/hook/custom.php:626
+#, php-format
+msgid "Theme of %s"
+msgstr ""
+
+#: inc/hook/custom.php:660
+msgid "PREV"
+msgstr ""
+
+#: inc/hook/custom.php:661
+msgid "NEXT"
+msgstr ""
+
+#: inc/template-tags.php:99
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:116 template-parts/content-page.php:35
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/widget/promo/inc/widget.php:29
+msgid "A widget that displays promo section"
+msgstr ""
+
+#: inc/widget/promo/inc/widget.php:33
+msgid "EM: Promo Widget"
+msgstr ""
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-single.php:58
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:75
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart.php:122
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:29
+msgid "You must be logged in to checkout."
+msgstr ""
