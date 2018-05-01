@@ -82,8 +82,3 @@ require_once trailingslashit( get_template_directory() ) . '/inc/widget/recent-p
  */
 require trailingslashit( get_template_directory() ) . '/inc/ecommerce-market-activation.php';
 
-/**
- *  Demo Import Post
- */
-require_once trailingslashit( get_template_directory() ) . '/inc/hook/demo-import-setup.php';
-

@@ -172,20 +172,6 @@ function ecommerce_market_register_required_plugins() {
             'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
             'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
         ),
-        array(
-            'name'      => esc_html__( 'Contact Form 7', 'ecommerce-market' ), //The plugin name
-            'slug'      => 'contact-form-7',  // The plugin slug (typically the folder name)
-            'required'  => false,  // If false, the plugin is only 'recommended' instead of required.
-            'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-        ),        
-        array(
-            'name'      => esc_html__( 'One Click Demo Import', 'ecommerce-market' ), //The plugin name
-            'slug'      => 'one-click-demo-import',  // The plugin slug (typically the folder name)
-            'required'  => false,  // If false, the plugin is only 'recommended' instead of required.
-            'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
-            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-        ),         
 
     );
 

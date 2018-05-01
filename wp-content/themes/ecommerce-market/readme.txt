@@ -1,4 +1,4 @@
-﻿=== eCommerce Market ===
+=== eCommerce Market ===
 
 ==========================================================================================
                         ***** ECommerce MARKET THEME DOCUMENTATION *****
@@ -15,8 +15,8 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, c
 -----------------------------------------------------------------------------------------
 
 Requires at least: 4.0
-Tested up to: 4.9.4
-Stable tag: 1.0.8
+Tested up to: 4.9.1
+Stable tag: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -116,17 +116,6 @@ TGM Plugin Activation
 eCommerce Market includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
-
-= 1.0.8 - Feb 26 2018 =
-* Added footer widget
-* Tested woocommerce upto 3.3.3
-* Minor Css chnages
-
-= 1.0.7 - Feb 16 2018 =
-* Added One Click Demo Import
-* Added options for button title in EM:Latest Blog widget.
-* Added options for button title in category page.
-* Tested upto 4.9.4
 
 = 1.0.6 - Jan 4 2018 =
 * Fix the issue of search in header section.

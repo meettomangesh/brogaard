@@ -144,39 +144,7 @@ function ecommerce_market_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => sprintf( esc_html__( 'Footer %d', 'ecommerce-market' ), 1 ),
-		'id'            => 'footer-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title"><span>',
-		'after_title'   => '</h2></span>',
-	) );
-	register_sidebar( array(
-		'name'          => sprintf( esc_html__( 'Footer %d', 'ecommerce-market' ), 2 ),
-		'id'            => 'footer-2',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title"><span>',
-		'after_title'   => '</h2></span>',
-	) );
-	register_sidebar( array(
-		'name'          => sprintf( esc_html__( 'Footer %d', 'ecommerce-market' ), 3 ),
-		'id'            => 'footer-3',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title"><span>',
-		'after_title'   => '</h2></span>',
-	) );	
-	register_sidebar( array(
-		'name'          => sprintf( esc_html__( 'Footer %d', 'ecommerce-market' ), 4 ),
-		'id'            => 'footer-4',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title"><span>',
-		'after_title'   => '</h2></span>',
-	) );	
+		) );
 
 	if ( ecommerce_market_is_woocommerce_active() ) : 
 		register_sidebar( array(
@@ -263,3 +231,10 @@ add_action( 'wp_enqueue_scripts', 'ecommerce_market_scripts' );
  * Load init.
  */
 require_once trailingslashit( get_template_directory() ) . 'inc/init.php';
+
+
+add_action( 'homepage', 'woo_slider', 10 );
+
+function woo_slider() {
+	get_template_part( 'slider' );
+}

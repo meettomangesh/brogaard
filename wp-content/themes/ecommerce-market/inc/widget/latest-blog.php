@@ -25,7 +25,6 @@ class Ecommerce_Market_Latest_Blog extends WP_Widget
   function form( $instance ) {
     $title     = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : '';
     $number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 4;
-    $read_more = isset( $instance['read_more'] ) ? esc_attr( $instance['read_more'] ) : esc_html__( 'Read More', 'ecommerce-market' );
     $show_date = isset( $instance['show_date'] ) ? (bool) $instance['show_date'] : false;
   ?>
     <p><label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php echo esc_html__( 'Title:', 'ecommerce-market' ); ?></label>
@@ -33,9 +32,6 @@ class Ecommerce_Market_Latest_Blog extends WP_Widget
 
     <p><label for="<?php echo esc_attr($this->get_field_id( 'number' )); ?>"><?php echo esc_html__( 'Number of posts to show:', 'ecommerce-market' );?></label>
     <input class="tiny-text" id="<?php echo esc_attr($this->get_field_id( 'number' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'number' )); ?>" type="number" step="4" min="4" value="<?php echo esc_attr($number); ?>" size="4" /></p>
-
-    <p><label for="<?php echo esc_attr($this->get_field_id( 'read_more' )); ?>"><?php echo esc_html__( 'Button Title:', 'ecommerce-market' ); ?></label>
-    <input class="widefat" id="<?php echo esc_attr($this->get_field_id( 'read_more' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'read_more' )); ?>" type="text" value="<?php echo esc_attr($read_more); ?>" /></p>    
 
     <p><input class="checkbox" type="checkbox"<?php checked( $show_date ); ?> id="<?php echo esc_attr($this->get_field_id( 'show_date' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'show_date' )); ?>" />
     <label for="<?php echo esc_attr($this->get_field_id( 'show_date' )); ?>"><?php echo esc_html__( 'Display post date?', 'ecommerce-market' ); ?></label></p>      
@@ -48,7 +44,6 @@ class Ecommerce_Market_Latest_Blog extends WP_Widget
     $instance = $old_instance;
     $instance['title'] = sanitize_text_field( $new_instance['title'] );
     $instance['number'] = (int) $new_instance['number'];
-    $instance['read_more'] = sanitize_text_field( $new_instance['read_more'] );
     $instance['show_date'] = isset( $new_instance['show_date'] ) ? (bool) $new_instance['show_date'] : false;
     return $instance;
   }
@@ -62,9 +57,6 @@ class Ecommerce_Market_Latest_Blog extends WP_Widget
     $number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 5;
     if ( ! $number )
       $number = 4;
-
-    $read_more = ! empty( $instance['read_more'] ) ? esc_html($instance['read_more']) : esc_html__( 'Read More', 'ecommerce-market' );
-
     $show_date = isset( $instance['show_date'] ) ? $instance['show_date'] : false;
 
     $r = new WP_Query( apply_filters( 'widget_posts_args', array(
@@ -125,7 +117,7 @@ class Ecommerce_Market_Latest_Blog extends WP_Widget
                           echo wp_kses_post( wpautop( $excerpt ) );
                         ?>
                     </div>
-                    <a href="<?php the_permalink();?>" class="read-more"><?php echo esc_html( $read_more );?></a>
+                    <a href="<?php the_permalink();?>" class="read-more"><?php echo esc_html__( 'Read More', 'ecommerce-market' );?></a>
                   </article>
                 </div>
 

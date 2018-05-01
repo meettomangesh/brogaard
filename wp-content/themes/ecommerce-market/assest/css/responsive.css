@@ -400,11 +400,7 @@ td{
 table,
 th,
 td{
-    padding: 4px;
-}
-.woocommerce .related .price ins,
-.woocommerce .summary .price ins{
-    margin-bottom: 0;
+    padding: 5px;
 }
 
 
@@ -731,11 +727,6 @@ a.toggle{
     margin: 20px 0 0;
 }
 
-.woocommerce .summary p.price{
-    margin: 0 0 15px;
-}
-
-
 }
 
 
@@ -948,11 +939,6 @@ a.toggle{
     .woocommerce .woocommerce-ordering,
     .woocommerce-page .woocommerce-ordering{
         float: none;
-    }
-
-    .woocommerce .star-rating span::before,
-    .woocommerce .star-rating::before {
-        font-size: 12px;
     }
 
 

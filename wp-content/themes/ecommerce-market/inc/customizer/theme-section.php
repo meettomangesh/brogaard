@@ -166,22 +166,6 @@ if ( ecommerce_market_is_woocommerce_active() ):
 	);
 endif;
 
-/*************** Archive Page Details Text. *****************************/
-$wp_customize->add_setting( 'theme_options[archive_readmore]',
-	array(
-	'default'           => $default['archive_readmore'],
-	'capability'        => 'edit_theme_options',
-	'sanitize_callback' => 'ecommerce_market_sanitize_textarea_content',
-	)
-);
-$wp_customize->add_control( 'theme_options[archive_readmore]',
-	array(
-	'label'    => esc_html__( 'Archive Details Text', 'ecommerce-market' ),
-	'section'  => 'section_general',
-	'type'     => 'text',
-	)
-);
-
 /********************************** Pagaination Option *********************************/
 $wp_customize->add_setting('theme_options[pagination_option]', 
 	array(

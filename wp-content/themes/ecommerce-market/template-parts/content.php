@@ -53,8 +53,7 @@
 
 		<?php the_excerpt();?>		
 
-		<?php $archive_readmore = ecommerce_market_get_option( 'archive_readmore' ); ?>
-		<a class="read-more" href="<?php the_permalink();?>"><?php echo esc_html( $archive_readmore );?></a>
+		<a class="read-more" href="<?php the_permalink();?>"><?php echo  esc_html__( 'Details', 'ecommerce-market' );?></a>
 
 
 	</div><!-- .entry-content -->

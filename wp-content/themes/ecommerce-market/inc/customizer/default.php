@@ -37,7 +37,6 @@ function ecommerce_market_get_default_theme_options() {
 	/******************** General Settings *************************/	
 	$defaults['layout_options']						= 'right';
 	$defaults['enable_shop_sidebar']				= true; 
-	$defaults['archive_readmore']					= esc_html__( 'Details', 'ecommerce-market' );
 	$defaults['pagination_option']					= 'default';
 	$defaults['enable_breadcrumb']					= true;
 	

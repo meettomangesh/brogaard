@@ -164,7 +164,8 @@ class Ecommerce_Market_Product_Carousel extends WP_Widget
 		}
 		?>
 
-		<section class="featured-product-section padding-space">
+		<!--<section class="featured-product-section padding-space">-->
+		<section class="main-product-section padding-space">
 			<div class="container">
 
 				<?php if ( !empty( $title ) ) :?>
@@ -175,15 +176,29 @@ class Ecommerce_Market_Product_Carousel extends WP_Widget
 					</header>
 				<?php endif;?>
 
-				<div id="featured-product-slider" class="featured-product-slider owl-carousel owl-theme">
+				<!--<div id="featured-product-slider" class="featured-product-slider owl-carousel owl-theme"> -->
+				<div  class="main-product-wrap">	
 					<?php
+					$count = 0;
+					$os_animation = 'bounceInRight';
+					
 					$featured_query = new WP_Query( $args );
 
 					while ($featured_query->have_posts()) : $featured_query->the_post();
 						$product = wc_get_product( $featured_query->post->ID ); 
 						$image_id = get_post_thumbnail_id();
 						$image_url = wp_get_attachment_image_src($image_id,'ecommerce-market-product-carousel', false);?>
-						<div class="product-item">
+						<?php
+						
+						$os_animation = 'bounceInLeft';
+						if ($count ==  2  ) {
+								$os_animation = 'bounceInDown';
+
+							} elseif ( $count == 3 || $count == 5) {
+								$os_animation = 'bounceInRight';
+							}
+							?>
+						<div class="product-item os-animation" data-os-animation="<?php echo esc_attr($os_animation);?>">
 
 							<div class="product-list-wrapper">
 
@@ -256,8 +271,18 @@ class Ecommerce_Market_Product_Carousel extends WP_Widget
 											<?php esc_html_e('Add to Wishlist','ecommerce-market'); ?><i class="fa fa-heart"></i>
 										</a>
 									<?php } else{
-
-										woocommerce_template_loop_add_to_cart( $product );
+										$btn_class = 'woo_catalog_enquiry_btn demo btn btn-primary btn-large';
+									?>
+										
+										<!--<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" class="single_add_to_wishlist" >
+											<?php esc_html_e('Shop Now','ecommerce-market'); ?><i class="fa fa-heart"></i>
+										</a>-->
+										
+										<a href="<?php echo esc_url( get_permalink( $product->get_id() ) );?>" class="btn <?php echo esc_attr( $btn_class );?>">
+										<?php echo esc_html__( 'Shop Now', 'ecommerce-market' );?>										
+										</a>
+									<?php 	
+										//woocommerce_template_loop_add_to_cart( $product );
 										
 									} ?>
 
@@ -266,6 +291,7 @@ class Ecommerce_Market_Product_Carousel extends WP_Widget
 							</div>
 
 						</div>
+						<?php $count++;  //var_dump( $count);?>
 					<?php endwhile;
 					wp_reset_postdata();?>
 				</div>

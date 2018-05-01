@@ -4,7 +4,7 @@ Theme URI: https://rigorousthemes.com/downloads/ecommerce-market/
 Author: Rigorous Themes
 Author URI: http://rigorousthemes.com/
 Description: eCommerce Market is a Free WooCommerce widget based WordPress theme suitable for eCommerce websites of any market type: such as mobile & tablet market, laptop market, online book market, fashion market, sports market, digital market, cosmetics market, jewelry market and for multipurpose online markets. It's extremely easy to navigate and is also responsive to screen size. eMarket also provides plenty of customization options such as Customizer theme options, background image, SEO optimized, fully responsive, fast loading. If you’re looking for a WooCommerce powered solution for your store, with wide design options you choose for eCommerce Market.Check details at https://rigorousthemes.com/downloads/ecommerce-market/
-Version: 1.0.8
+Version: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ecommerce-market
@@ -3977,9 +3977,6 @@ textarea{
 		height: 50px;
 	}
 
-	.site-footer .widget-area {
-		border-bottom: 1px solid #323335;
-	}
 
 	/*       main product section styling from here      */
 	.main-product-section .container{
@@ -5933,5 +5930,4 @@ textarea{
         .blog-section .post{
         	margin-bottom: 0;
         }
-
 

@@ -156,12 +156,12 @@ function ecommerce_market_site_branding() {
 
 								?>
 
-									<div class="popup-wrapper <?php echo esc_attr( $popup_class);?>">
+									<!--<div class="popup-wrapper <?php echo esc_attr( $popup_class);?>">
 										<div class="popup-wrap">
 											<span class="close"><i class="fa fa-close"></i></span>
 											<?php echo do_shortcode( '[woocommerce_my_account]');?>
 										</div>
-									</div>
+									</div>-->
 
 								
 							<?php } ?>
@@ -267,12 +267,12 @@ function ecommerce_market_primary_menu() {
 		endif;
 		add_action( 'ecommerce_market_action_header', 'ecommerce_market_primary_menu', 20 );
 
-if ( ! function_exists( 'ecommerce_market_slider' ) ) :
-/**
- * Ecommerce Market Slider
- *
- * @since 1.0.0
- */
+		if ( ! function_exists( 'ecommerce_market_slider' ) ) :
+	/**
+	 * Ecommerce Market Slider
+	 *
+	 * @since 1.0.0
+	 */
 function ecommerce_market_slider() {
 
 	if ( is_front_page() ) { ?>
@@ -503,47 +503,6 @@ function ecommerce_market_subscription() {
 endif;
 
 add_action( 'ecommerce_market_action_footer', 'ecommerce_market_subscription', 10 );
-if ( ! function_exists( 'ecommerce_market_footer_widgets' ) ) :
-	/**
-	 * Footer Menu
- 	 *
-	 * @since 1.0.0
-	 */
-function ecommerce_market_footer_widget() {
-	?>
-	<?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' )  || is_active_sidebar( 'footer-4' ) ) : ?>
-	
-		<div class="widget-area"> <!-- widget area starting from here -->
-			<div class="container">
-				<div class="row">
-					<?php
-					$column_count = 0;
-					$class_coloumn =12;
-					for ( $i = 1; $i <= 4; $i++ ) {
-						if ( is_active_sidebar( 'footer-' . $i ) ) {
-							$column_count++;
-							$class_coloumn = 12/$column_count;
-						}
-					} ?>
-
-					<?php $column_class = 'custom-col-' . absint( $class_coloumn );
-					for ( $i = 1; $i <= 4 ; $i++ ) {
-						if ( is_active_sidebar( 'footer-' . $i ) ) { ?>
-							<div class="<?php echo esc_attr( $column_class ); ?>">
-								<?php dynamic_sidebar( 'footer-' . $i ); ?>
-							</div>
-						<?php }
-					} ?>
-				</div>
-			</div>
-
-		</div> <!-- widget area starting from here -->
-	<?php endif;?> 	
-
-	<?php 
-}
-endif;
-add_action( 'ecommerce_market_action_footer', 'ecommerce_market_footer_widget', 12 );
 
 if ( ! function_exists( 'ecommerce_market_contact_section' ) ) :
 
@@ -606,8 +565,6 @@ endif;
 
 add_action( 'ecommerce_market_action_footer', 'ecommerce_market_contact_section', 15 );
 
-
-
 if ( ! function_exists( 'ecommerce_market_footer_copyright' ) ) :
 
 	/**
@@ -638,6 +595,7 @@ function ecommerce_market_footer_copyright() {
 
 			
 			<?php $footer_social_icon = ecommerce_market_get_option('footer_social_icon');
+             
 			if ( true == $footer_social_icon ):
 
 				if( has_nav_menu( 'social-menu' ) ) : ?>
@@ -668,7 +626,7 @@ function ecommerce_market_footer_copyright() {
 				/* translators: %s: theme */ 
 				$powered_by_text = sprintf( __( 'Theme of %s', 'ecommerce-market' ), '<a target="_blank" rel="designer" href="https://rigorousthemes.com/">Rigorous Themes</a>' ); /* translators: %s: theme info */ 
 				?>
-				<span class="copy-right"><?php echo wp_kses_post($powered_by_text);?>&nbsp;<?php echo esc_html( $copyright_footer );?></span>
+				<span class="copy-right"><?php //echo wp_kses_post($powered_by_text);?>&nbsp;<?php echo esc_html( $copyright_footer );?></span>
 
 			</div>
 		</div> 
