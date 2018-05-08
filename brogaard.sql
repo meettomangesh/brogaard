@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 04, 2018 at 06:14 PM
+-- Generation Time: May 08, 2018 at 06:47 PM
 -- Server version: 5.7.22-0ubuntu0.16.04.1
 -- PHP Version: 7.1.16-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -93,7 +93,11 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 (18, 103, 'WooCommerce', '', '', '', '2018-05-04 11:05:50', '2018-05-04 11:05:50', 'Order status changed from Processing to Refunded.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
 (19, 107, 'WooCommerce', '', '', '', '2018-05-04 12:22:10', '2018-05-04 12:22:10', 'Order status changed from Pending payment to Processing.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
 (20, 106, 'webmaster', 'meettomangesh@gmail.com', '', '', '2018-05-04 12:22:34', '2018-05-04 12:22:34', 'Order details manually sent to customer.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
-(21, 101, 'webmaster', 'meettomangesh@gmail.com', '', '', '2018-05-04 12:31:02', '2018-05-04 12:31:02', 'Order status changed from Processing to Completed.', 0, '1', 'WooCommerce', 'order_note', 0, 0);
+(21, 101, 'webmaster', 'meettomangesh@gmail.com', '', '', '2018-05-04 12:31:02', '2018-05-04 12:31:02', 'Order status changed from Processing to Completed.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(22, 106, 'WooCommerce', '', '', '', '2018-05-08 10:44:07', '2018-05-08 10:44:07', 'Unpaid order cancelled - time limit reached. Order status changed from Pending payment to Cancelled.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(23, 110, 'WooCommerce', '', '', '', '2018-05-08 11:21:35', '2018-05-08 11:21:35', 'Order status changed from Pending payment to Processing.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(24, 108, 'WooCommerce', '', '', '', '2018-05-08 12:54:10', '2018-05-08 12:54:10', 'Unpaid order cancelled - time limit reached. Order status changed from Pending payment to Cancelled.', 0, '1', 'WooCommerce', 'order_note', 0, 0),
+(25, 109, 'WooCommerce', '', '', '', '2018-05-08 12:54:11', '2018-05-08 12:54:11', 'Unpaid order cancelled - time limit reached. Order status changed from Pending payment to Cancelled.', 0, '1', 'WooCommerce', 'order_note', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -167,7 +171,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:7:{i:0;s:36:"contact-form-7/wp-contact-form-7.php";i:1;s:19:"jetpack/jetpack.php";i:2;s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";i:3;s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";i:4;s:27:"woocommerce/woocommerce.php";i:5;s:41:"wordpress-importer/wordpress-importer.php";i:6;s:34:"yith-woocommerce-wishlist/init.php";}', 'yes'),
+(33, 'active_plugins', 'a:5:{i:1;s:19:"jetpack/jetpack.php";i:2;s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";i:4;s:27:"woocommerce/woocommerce.php";i:5;s:41:"wordpress-importer/wordpress-importer.php";i:6;s:34:"yith-woocommerce-wishlist/init.php";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -243,11 +247,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (106, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (107, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (108, 'widget_custom_html', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(109, 'cron', 'a:9:{i:1525439198;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1525440854;a:1:{s:20:"jetpack_clean_nonces";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1525456209;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1525459109;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1525478400;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1525499409;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1525503110;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1528156800;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
+(109, 'cron', 'a:9:{i:1525786454;a:1:{s:20:"jetpack_clean_nonces";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1525787651;a:1:{s:32:"woocommerce_cancel_unpaid_orders";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1525801809;a:1:{s:28:"woocommerce_cleanup_sessions";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1525804709;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1525824000;a:1:{s:27:"woocommerce_scheduled_sales";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1525845009;a:1:{s:30:"woocommerce_tracker_send_event";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1525848710;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1528156800;a:1:{s:25:"woocommerce_geoip_updater";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:7:"monthly";s:4:"args";a:0:{}s:8:"interval";i:2635200;}}}s:7:"version";i:2;}', 'yes'),
 (110, 'theme_mods_twentyseventeen', 'a:2:{s:18:"custom_css_post_id";i:-1;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1525071186;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
-(114, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.5.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.5.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.9.5-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.9.5-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.9.5";s:7:"version";s:5:"4.9.5";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1525416422;s:15:"version_checked";s:5:"4.9.5";s:12:"translations";a:0:{}}', 'no'),
-(120, '_site_transient_timeout_browser_7d3bbe90e9c9cc2510c72ffd49db1a06', '1525675911', 'no'),
-(121, '_site_transient_browser_7d3bbe90e9c9cc2510c72ffd49db1a06', 'a:10:{s:4:"name";s:6:"Chrome";s:7:"version";s:13:"66.0.3359.117";s:8:"platform";s:5:"Linux";s:10:"update_url";s:29:"https://www.google.com/chrome";s:7:"img_src";s:43:"http://s.w.org/images/browsers/chrome.png?1";s:11:"img_src_ssl";s:44:"https://s.w.org/images/browsers/chrome.png?1";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;s:6:"mobile";b:0;}', 'no'),
+(114, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.5.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.5.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.9.5-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.9.5-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.9.5";s:7:"version";s:5:"4.9.5";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1525776250;s:15:"version_checked";s:5:"4.9.5";s:12:"translations";a:0:{}}', 'no'),
 (123, 'can_compress_scripts', '0', 'no'),
 (129, 'current_theme', 'eCommerce Market', 'yes'),
 (130, 'theme_mods_ecommerce-market', 'a:4:{i:0;b:0;s:18:"nav_menu_locations";a:0:{}s:18:"custom_css_post_id";i:-1;s:13:"theme_options";a:4:{s:14:"footer_address";s:55:"Refshalevej 169A, 1. DK- 1432 Cph. K Copenhagen Denmark";s:13:"footer_number";s:11:"09730872969";s:12:"footer_email";s:23:"meettomangesh@gmail.com";s:14:"copyright_text";s:22:"copyright@brogaard.com";}}', 'yes'),
@@ -256,7 +258,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (133, 'widget_ecommerce_market_testimonial', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (134, 'widget_ecommerce-market', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (135, 'widget_ecommerce_market_recent_posts', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(140, 'recently_activated', 'a:3:{s:47:"one-click-demo-import/one-click-demo-import.php";i:1525430540;s:34:"yith-woocommerce-wishlist/init.php";i:1525240155;s:45:"woocommerce-services/woocommerce-services.php";i:1525240141;}', 'yes'),
+(140, 'recently_activated', 'a:5:{s:36:"contact-form-7/wp-contact-form-7.php";i:1525778579;s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";i:1525778562;s:47:"one-click-demo-import/one-click-demo-import.php";i:1525430540;s:34:"yith-woocommerce-wishlist/init.php";i:1525240155;s:45:"woocommerce-services/woocommerce-services.php";i:1525240141;}', 'yes'),
 (149, 'woocommerce_store_address', 'Refshalevej 169A, 1.', 'yes'),
 (150, 'woocommerce_store_address_2', 'DK- 1432 Cph. K', 'yes'),
 (151, 'woocommerce_store_city', 'Copenhagen', 'yes'),
@@ -369,13 +371,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (266, 'woocommerce_meta_box_errors', 'a:0:{}', 'yes'),
 (268, 'woocommerce_product_type', 'both', 'yes'),
 (269, 'woocommerce_allow_tracking', 'yes', 'yes'),
-(270, 'woocommerce_tracker_last_send', '1525091612', 'yes'),
+(270, 'woocommerce_tracker_last_send', '1525776260', 'yes'),
 (273, 'woocommerce_klarna_payments_settings', 'a:1:{s:7:"enabled";s:2:"no";}', 'yes'),
-(275, 'woocommerce_ppec_paypal_settings', 'a:33:{s:7:"enabled";s:3:"yes";s:16:"reroute_requests";s:3:"yes";s:5:"email";s:23:"meettomangesh@gmail.com";s:11:"environment";s:7:"sandbox";s:20:"sandbox_api_username";s:35:"testbrogaardbusiness_api1.gmail.com";s:20:"sandbox_api_password";s:16:"VZRBGWX4JQDH4EKT";s:21:"sandbox_api_signature";s:56:"AdnTXdKpmOs3nB8WH-nT6RoE6qV.AYdi8g6mSJtrkJBcM4D2S6V970U7";s:23:"sandbox_api_certificate";s:0:"";s:19:"sandbox_api_subject";s:0:"";s:5:"title";s:23:"PayPal Express Checkout";s:11:"description";s:85:"Pay via PayPal; you can pay with your credit card if you don\'t have a PayPal account.";s:12:"api_username";s:0:"";s:12:"api_password";s:0:"";s:13:"api_signature";s:0:"";s:15:"api_certificate";s:0:"";s:11:"api_subject";s:0:"";s:10:"brand_name";s:8:"brogaard";s:11:"button_size";s:5:"large";s:21:"cart_checkout_enabled";s:3:"yes";s:12:"mark_enabled";s:2:"no";s:14:"logo_image_url";s:0:"";s:16:"header_image_url";s:0:"";s:10:"page_style";s:0:"";s:12:"landing_page";s:5:"Login";s:14:"credit_enabled";s:2:"no";s:34:"checkout_on_single_product_enabled";s:2:"no";s:5:"debug";s:2:"no";s:14:"invoice_prefix";s:3:"WC-";s:15:"require_billing";s:2:"no";s:20:"require_phone_number";s:2:"no";s:13:"paymentaction";s:4:"sale";s:16:"instant_payments";s:2:"no";s:26:"subtotal_mismatch_behavior";s:3:"add";}', 'yes'),
+(275, 'woocommerce_ppec_paypal_settings', 'a:33:{s:7:"enabled";s:3:"yes";s:16:"reroute_requests";s:3:"yes";s:5:"email";s:23:"meettomangesh@gmail.com";s:11:"environment";s:7:"sandbox";s:20:"sandbox_api_username";s:35:"testbrogaardbusiness_api1.gmail.com";s:20:"sandbox_api_password";s:16:"VZRBGWX4JQDH4EKT";s:21:"sandbox_api_signature";s:56:"AdnTXdKpmOs3nB8WH-nT6RoE6qV.AYdi8g6mSJtrkJBcM4D2S6V970U7";s:23:"sandbox_api_certificate";s:0:"";s:19:"sandbox_api_subject";s:0:"";s:5:"title";s:23:"PayPal Express Checkout";s:11:"description";s:85:"Pay via PayPal; you can pay with your credit card if you don\'t have a PayPal account.";s:12:"api_username";s:0:"";s:12:"api_password";s:0:"";s:13:"api_signature";s:0:"";s:15:"api_certificate";s:0:"";s:11:"api_subject";s:0:"";s:10:"brand_name";s:8:"brogaard";s:11:"button_size";s:6:"medium";s:21:"cart_checkout_enabled";s:2:"no";s:12:"mark_enabled";s:3:"yes";s:14:"logo_image_url";s:0:"";s:16:"header_image_url";s:0:"";s:10:"page_style";s:0:"";s:12:"landing_page";s:5:"Login";s:14:"credit_enabled";s:2:"no";s:34:"checkout_on_single_product_enabled";s:2:"no";s:5:"debug";s:2:"no";s:14:"invoice_prefix";s:3:"WC-";s:15:"require_billing";s:2:"no";s:20:"require_phone_number";s:2:"no";s:13:"paymentaction";s:4:"sale";s:16:"instant_payments";s:2:"no";s:26:"subtotal_mismatch_behavior";s:3:"add";}', 'yes'),
 (276, 'woocommerce_stripe_settings', 'a:3:{s:7:"enabled";s:2:"no";s:14:"create_account";b:0;s:5:"email";b:0;}', 'yes'),
 (277, 'woocommerce_cheque_settings', 'a:4:{s:7:"enabled";s:3:"yes";s:5:"title";s:14:"Check payments";s:11:"description";s:98:"Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.";s:12:"instructions";s:0:"";}', 'yes'),
 (278, 'woocommerce_bacs_settings', 'a:5:{s:7:"enabled";s:3:"yes";s:5:"title";s:20:"Direct bank transfer";s:11:"description";s:176:"Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.";s:12:"instructions";s:0:"";s:15:"account_details";s:0:"";}', 'yes'),
-(279, 'woocommerce_cod_settings', 'a:1:{s:7:"enabled";s:2:"no";}', 'yes'),
+(279, 'woocommerce_cod_settings', 'a:6:{s:7:"enabled";s:3:"yes";s:5:"title";s:16:"Cash on delivery";s:11:"description";s:28:"Pay with cash upon delivery.";s:12:"instructions";s:28:"Pay with cash upon delivery.";s:18:"enable_for_methods";s:0:"";s:18:"enable_for_virtual";s:3:"yes";}', 'yes'),
 (282, 'jetpack_activated', '1', 'yes'),
 (285, 'jetpack_activation_source', 'a:2:{i:0;s:7:"unknown";i:1;N;}', 'yes'),
 (286, 'jetpack_sync_settings_disable', '0', 'yes'),
@@ -394,8 +396,6 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (316, '_transient_wc_low_stock_count', '0', 'no'),
 (317, '_transient_timeout_wc_outofstock_count', '1527683713', 'no'),
 (318, '_transient_wc_outofstock_count', '0', 'no'),
-(319, '_transient_timeout_external_ip_address_::1', '1525696575', 'no'),
-(320, '_transient_external_ip_address_::1', '125.99.66.234', 'no'),
 (327, 'wpcf7', 'a:2:{s:7:"version";s:5:"5.0.1";s:13:"bulk_validate";a:4:{s:9:"timestamp";i:1525092915;s:7:"version";s:5:"5.0.1";s:11:"count_valid";i:1;s:13:"count_invalid";i:0;}}', 'yes'),
 (328, 'yit_recently_activated', 'a:0:{}', 'yes'),
 (329, 'yith_wcwl_frontend_css_colors', 's:1159:"a:10:{s:15:"add_to_wishlist";a:3:{s:10:"background";s:7:"#333333";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#333333";}s:21:"add_to_wishlist_hover";a:3:{s:10:"background";s:7:"#4F4F4F";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#4F4F4F";}s:11:"add_to_cart";a:3:{s:10:"background";s:7:"#333333";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#333333";}s:17:"add_to_cart_hover";a:3:{s:10:"background";s:7:"#4F4F4F";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#4F4F4F";}s:14:"button_style_1";a:3:{s:10:"background";s:7:"#333333";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#333333";}s:20:"button_style_1_hover";a:3:{s:10:"background";s:7:"#4F4F4F";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#4F4F4F";}s:14:"button_style_2";a:3:{s:10:"background";s:7:"#FFFFFF";s:5:"color";s:7:"#858484";s:12:"border_color";s:7:"#c6c6c6";}s:20:"button_style_2_hover";a:3:{s:10:"background";s:7:"#4F4F4F";s:5:"color";s:7:"#FFFFFF";s:12:"border_color";s:7:"#4F4F4F";}s:14:"wishlist_table";a:3:{s:10:"background";s:7:"#FFFFFF";s:5:"color";s:7:"#6d6c6c";s:12:"border_color";s:7:"#FFFFFF";}s:7:"headers";a:1:{s:10:"background";s:7:"#F4F4F4";}}";', 'yes'),
@@ -458,43 +458,40 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (431, '_site_transient_timeout_browser_bd6a9fe252598f30ffd1edb8511fd2b1', '1525796108', 'no'),
 (432, '_site_transient_browser_bd6a9fe252598f30ffd1edb8511fd2b1', 'a:10:{s:4:"name";s:6:"Chrome";s:7:"version";s:13:"66.0.3359.139";s:8:"platform";s:7:"Windows";s:10:"update_url";s:29:"https://www.google.com/chrome";s:7:"img_src";s:43:"http://s.w.org/images/browsers/chrome.png?1";s:11:"img_src_ssl";s:44:"https://s.w.org/images/browsers/chrome.png?1";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;s:6:"mobile";b:0;}', 'no'),
 (451, 'woocommerce_maybe_regenerate_images_hash', '991b1ca641921cf0f5baf7a2fe85861b', 'yes'),
-(468, '_transient_timeout_plugin_slugs', '1525523942', 'no'),
-(469, '_transient_plugin_slugs', 'a:8:{i:0;s:36:"contact-form-7/wp-contact-form-7.php";i:1;s:19:"jetpack/jetpack.php";i:2;s:27:"woocommerce/woocommerce.php";i:3;s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";i:4;s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";i:5;s:45:"woocommerce-services/woocommerce-services.php";i:6;s:41:"wordpress-importer/wordpress-importer.php";i:7;s:34:"yith-woocommerce-wishlist/init.php";}', 'no'),
 (483, '_transient_timeout_wc_shipping_method_count_0_1525091669', '1527831408', 'no'),
 (484, '_transient_wc_shipping_method_count_0_1525091669', '2', 'no'),
 (485, 'woocommerce_bacs_accounts', 'a:1:{i:0;a:6:{s:12:"account_name";s:0:"";s:14:"account_number";s:0:"";s:9:"bank_name";s:0:"";s:9:"sort_code";s:0:"";s:4:"iban";s:0:"";s:3:"bic";s:0:"";}}', 'yes'),
 (492, 'woocommerce_version', '3.3.5', 'yes'),
 (493, 'woocommerce_db_version', '3.3.5', 'yes'),
-(509, '_transient_orders-transient-version', '1525437062', 'yes'),
-(527, 'woocommerce_paypal_settings', 'a:23:{s:7:"enabled";s:3:"yes";s:5:"title";s:6:"PayPal";s:11:"description";s:85:"Pay via PayPal; you can pay with your credit card if you don\'t have a PayPal account.";s:5:"email";s:23:"meettomangesh@gmail.com";s:8:"advanced";s:0:"";s:8:"testmode";s:3:"yes";s:5:"debug";s:2:"no";s:16:"ipn_notification";s:3:"yes";s:14:"receiver_email";s:23:"meettomangesh@gmail.com";s:14:"identity_token";s:0:"";s:14:"invoice_prefix";s:3:"WC-";s:13:"send_shipping";s:2:"no";s:16:"address_override";s:2:"no";s:13:"paymentaction";s:4:"sale";s:10:"page_style";s:0:"";s:9:"image_url";s:0:"";s:11:"api_details";s:0:"";s:12:"api_username";s:0:"";s:12:"api_password";s:0:"";s:13:"api_signature";s:0:"";s:20:"sandbox_api_username";s:35:"testbrogaardbusiness_api1.gmail.com";s:20:"sandbox_api_password";s:35:"testbrogaardbusiness_api1.gmail.com";s:21:"sandbox_api_signature";s:56:"AdnTXdKpmOs3nB8WH-nT6RoE6qV.AYdi8g6mSJtrkJBcM4D2S6V970U7";}', 'yes'),
+(509, '_transient_orders-transient-version', '1525784050', 'yes'),
+(527, 'woocommerce_paypal_settings', 'a:23:{s:7:"enabled";s:2:"no";s:5:"title";s:6:"PayPal";s:11:"description";s:85:"Pay via PayPal; you can pay with your credit card if you don\'t have a PayPal account.";s:5:"email";s:23:"meettomangesh@gmail.com";s:8:"advanced";s:0:"";s:8:"testmode";s:3:"yes";s:5:"debug";s:2:"no";s:16:"ipn_notification";s:3:"yes";s:14:"receiver_email";s:23:"meettomangesh@gmail.com";s:14:"identity_token";s:59:"16rtHJtuLs9sLX-AOxEmUKRuUONnw7_-dtXxtSWgfiCwwNh4UnCp6BCu9ua";s:14:"invoice_prefix";s:3:"WC-";s:13:"send_shipping";s:2:"no";s:16:"address_override";s:2:"no";s:13:"paymentaction";s:4:"sale";s:10:"page_style";s:0:"";s:9:"image_url";s:0:"";s:11:"api_details";s:0:"";s:12:"api_username";s:0:"";s:12:"api_password";s:0:"";s:13:"api_signature";s:0:"";s:20:"sandbox_api_username";s:35:"testbrogaardbusiness_api1.gmail.com";s:20:"sandbox_api_password";s:35:"testbrogaardbusiness_api1.gmail.com";s:21:"sandbox_api_signature";s:56:"AdnTXdKpmOs3nB8WH-nT6RoE6qV.AYdi8g6mSJtrkJBcM4D2S6V970U7";}', 'yes'),
 (533, 'woocommerce_ppec_payer_id_sandbox_b6d9330312381e97de6e1b13ee966098', 'QZ5WBCS2HLXV6', 'yes'),
 (534, 'woo_pp_admin_error', 'a:1:{i:0;a:1:{s:7:"success";s:59:"Success!  Your PayPal account has been set up successfully.";}}', 'yes'),
 (585, 'woocommerce_gateway_order', 'a:5:{s:4:"bacs";i:0;s:6:"cheque";i:1;s:3:"cod";i:2;s:6:"paypal";i:3;s:9:"paypalpro";i:4;}', 'yes'),
-(610, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1525416423;s:7:"checked";a:4:{s:16:"ecommerce-market";s:5:"1.0.6";s:13:"twentyfifteen";s:3:"1.9";s:15:"twentyseventeen";s:3:"1.5";s:13:"twentysixteen";s:3:"1.4";}s:8:"response";a:1:{s:16:"ecommerce-market";a:4:{s:5:"theme";s:16:"ecommerce-market";s:11:"new_version";s:5:"1.0.8";s:3:"url";s:46:"https://wordpress.org/themes/ecommerce-market/";s:7:"package";s:64:"https://downloads.wordpress.org/theme/ecommerce-market.1.0.8.zip";}}s:12:"translations";a:0:{}}', 'no');
-INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(611, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1525437540;s:8:"response";a:1:{s:19:"jetpack/jetpack.php";O:8:"stdClass":12:{s:2:"id";s:21:"w.org/plugins/jetpack";s:4:"slug";s:7:"jetpack";s:6:"plugin";s:19:"jetpack/jetpack.php";s:11:"new_version";s:3:"6.1";s:3:"url";s:38:"https://wordpress.org/plugins/jetpack/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/jetpack.6.1.zip";s:5:"icons";a:3:{s:2:"2x";s:60:"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=1791404";s:2:"1x";s:52:"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404";s:3:"svg";s:52:"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404";}s:7:"banners";a:2:{s:2:"2x";s:63:"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1791404";s:2:"1x";s:62:"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1791404";}s:11:"banners_rtl";a:0:{}s:6:"tested";s:5:"4.9.5";s:12:"requires_php";N;s:13:"compatibility";O:8:"stdClass":0:{}}}s:12:"translations";a:0:{}s:9:"no_update";a:7:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":9:{s:2:"id";s:28:"w.org/plugins/contact-form-7";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"5.0.1";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/contact-form-7.5.0.1.zip";s:5:"icons";a:2:{s:2:"2x";s:66:"https://ps.w.org/contact-form-7/assets/icon-256x256.png?rev=984007";s:2:"1x";s:66:"https://ps.w.org/contact-form-7/assets/icon-128x128.png?rev=984007";}s:7:"banners";a:2:{s:2:"2x";s:69:"https://ps.w.org/contact-form-7/assets/banner-1544x500.png?rev=860901";s:2:"1x";s:68:"https://ps.w.org/contact-form-7/assets/banner-772x250.png?rev=880427";}s:11:"banners_rtl";a:0:{}}s:27:"woocommerce/woocommerce.php";O:8:"stdClass":9:{s:2:"id";s:25:"w.org/plugins/woocommerce";s:4:"slug";s:11:"woocommerce";s:6:"plugin";s:27:"woocommerce/woocommerce.php";s:11:"new_version";s:5:"3.3.5";s:3:"url";s:42:"https://wordpress.org/plugins/woocommerce/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/woocommerce.3.3.5.zip";s:5:"icons";a:2:{s:2:"2x";s:64:"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831";s:2:"1x";s:64:"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=1440831";}s:7:"banners";a:2:{s:2:"2x";s:67:"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184";s:2:"1x";s:66:"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=1629184";}s:11:"banners_rtl";a:0:{}}s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";O:8:"stdClass":9:{s:2:"id";s:57:"w.org/plugins/woocommerce-gateway-paypal-express-checkout";s:4:"slug";s:43:"woocommerce-gateway-paypal-express-checkout";s:6:"plugin";s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";s:11:"new_version";s:5:"1.5.3";s:3:"url";s:74:"https://wordpress.org/plugins/woocommerce-gateway-paypal-express-checkout/";s:7:"package";s:92:"https://downloads.wordpress.org/plugin/woocommerce-gateway-paypal-express-checkout.1.5.3.zip";s:5:"icons";a:2:{s:2:"2x";s:96:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/icon-256x256.png?rev=1410389";s:2:"1x";s:96:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/icon-128x128.png?rev=1410389";}s:7:"banners";a:2:{s:2:"2x";s:99:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/banner-1544x500.png?rev=1410389";s:2:"1x";s:98:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/banner-772x250.png?rev=1410389";}s:11:"banners_rtl";a:0:{}}s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";O:8:"stdClass":9:{s:2:"id";s:52:"w.org/plugins/woocommerce-paypal-pro-payment-gateway";s:4:"slug";s:38:"woocommerce-paypal-pro-payment-gateway";s:6:"plugin";s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";s:11:"new_version";s:3:"2.3";s:3:"url";s:69:"https://wordpress.org/plugins/woocommerce-paypal-pro-payment-gateway/";s:7:"package";s:81:"https://downloads.wordpress.org/plugin/woocommerce-paypal-pro-payment-gateway.zip";s:5:"icons";a:1:{s:2:"1x";s:91:"https://ps.w.org/woocommerce-paypal-pro-payment-gateway/assets/icon-128x128.png?rev=1130363";}s:7:"banners";a:1:{s:2:"1x";s:93:"https://ps.w.org/woocommerce-paypal-pro-payment-gateway/assets/banner-772x250.png?rev=1130363";}s:11:"banners_rtl";a:0:{}}s:45:"woocommerce-services/woocommerce-services.php";O:8:"stdClass":9:{s:2:"id";s:34:"w.org/plugins/woocommerce-services";s:4:"slug";s:20:"woocommerce-services";s:6:"plugin";s:45:"woocommerce-services/woocommerce-services.php";s:11:"new_version";s:6:"1.12.3";s:3:"url";s:51:"https://wordpress.org/plugins/woocommerce-services/";s:7:"package";s:70:"https://downloads.wordpress.org/plugin/woocommerce-services.1.12.3.zip";s:5:"icons";a:2:{s:2:"2x";s:73:"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175";s:2:"1x";s:73:"https://ps.w.org/woocommerce-services/assets/icon-128x128.png?rev=1586175";}s:7:"banners";a:2:{s:2:"2x";s:76:"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183";s:2:"1x";s:75:"https://ps.w.org/woocommerce-services/assets/banner-772x250.png?rev=1598183";}s:11:"banners_rtl";a:0:{}}s:41:"wordpress-importer/wordpress-importer.php";O:8:"stdClass":9:{s:2:"id";s:32:"w.org/plugins/wordpress-importer";s:4:"slug";s:18:"wordpress-importer";s:6:"plugin";s:41:"wordpress-importer/wordpress-importer.php";s:11:"new_version";s:5:"0.6.4";s:3:"url";s:49:"https://wordpress.org/plugins/wordpress-importer/";s:7:"package";s:67:"https://downloads.wordpress.org/plugin/wordpress-importer.0.6.4.zip";s:5:"icons";a:1:{s:7:"default";s:69:"https://s.w.org/plugins/geopattern-icon/wordpress-importer_5696b3.svg";}s:7:"banners";a:1:{s:2:"1x";s:72:"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654";}s:11:"banners_rtl";a:0:{}}s:34:"yith-woocommerce-wishlist/init.php";O:8:"stdClass":9:{s:2:"id";s:39:"w.org/plugins/yith-woocommerce-wishlist";s:4:"slug";s:25:"yith-woocommerce-wishlist";s:6:"plugin";s:34:"yith-woocommerce-wishlist/init.php";s:11:"new_version";s:5:"2.2.1";s:3:"url";s:56:"https://wordpress.org/plugins/yith-woocommerce-wishlist/";s:7:"package";s:74:"https://downloads.wordpress.org/plugin/yith-woocommerce-wishlist.2.2.1.zip";s:5:"icons";a:1:{s:2:"1x";s:78:"https://ps.w.org/yith-woocommerce-wishlist/assets/icon-128x128.jpg?rev=1461336";}s:7:"banners";a:2:{s:2:"2x";s:81:"https://ps.w.org/yith-woocommerce-wishlist/assets/banner-1544x500.jpg?rev=1461336";s:2:"1x";s:80:"https://ps.w.org/yith-woocommerce-wishlist/assets/banner-772x250.jpg?rev=1461336";}s:11:"banners_rtl";a:0:{}}}}', 'no'),
-(615, '_transient_timeout_jetpack_https_test', '1525514551', 'no'),
-(616, '_transient_jetpack_https_test', '1', 'no'),
-(617, '_transient_timeout_jetpack_https_test_message', '1525514551', 'no'),
-(618, '_transient_jetpack_https_test_message', '', 'no'),
-(619, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1525471353', 'no'),
-(620, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class="rss-widget"><ul><li>An error has occurred, which probably means the feed is down. Try again later.</li></ul></div><div class="rss-widget"><ul><li>An error has occurred, which probably means the feed is down. Try again later.</li></ul></div>', 'no'),
-(621, '_site_transient_timeout_community-events-4501c091b0366d76ea3218b6cfdd8097', '1525471354', 'no'),
-(622, '_site_transient_community-events-4501c091b0366d76ea3218b6cfdd8097', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:2:"::";}s:6:"events";a:1:{i:0;a:7:{s:4:"type";s:6:"meetup";s:5:"title";s:38:"WordPress 15th Anniversary Celebration";s:3:"url";s:56:"https://www.meetup.com/WordPressMumbai/events/249605456/";s:6:"meetup";s:23:"Mumbai WordPress Meetup";s:10:"meetup_url";s:39:"https://www.meetup.com/WordPressMumbai/";s:4:"date";s:19:"2018-05-27 18:00:00";s:8:"location";a:4:{s:8:"location";s:17:"Mumbai, MH, India";s:7:"country";s:2:"IN";s:8:"latitude";d:18.959999084473;s:9:"longitude";d:72.819999694824;}}}}', 'no'),
 (629, 'woocommerce_ppec_payer_id_sandbox_1c18ffb31041d2d063b780ede2fa2add', 'NNMEVEJEBHP32', 'yes'),
-(639, '_transient_timeout__woocommerce_helper_updates', '1525473732', 'no'),
-(640, '_transient__woocommerce_helper_updates', 'a:4:{s:4:"hash";s:32:"d751713988987e9331980363e24189ce";s:7:"updated";i:1525430532;s:8:"products";a:0:{}s:6:"errors";a:1:{i:0;s:10:"http-error";}}', 'no'),
-(641, '_transient_timeout_wc_related_47', '1525517030', 'no'),
-(642, '_transient_wc_related_47', 'a:1:{s:50:"limit=4&exclude_ids%5B0%5D=0&exclude_ids%5B1%5D=47";a:4:{i:0;s:2:"44";i:1;s:2:"68";i:2;s:2:"70";i:3;s:2:"83";}}', 'no'),
 (649, '_transient_timeout_yith_wcwl_user_default_count_1', '1526037022', 'no'),
 (650, '_transient_yith_wcwl_user_default_count_1', '0', 'no'),
-(652, '_transient_timeout_jetpack_idc_allowed', '1525439198', 'no'),
-(653, '_transient_jetpack_idc_allowed', '1', 'no'),
-(657, '_transient_wc_count_comments', 'O:8:"stdClass":7:{s:14:"total_comments";i:2;s:3:"all";i:2;s:8:"approved";s:1:"2";s:9:"moderated";i:0;s:4:"spam";i:0;s:5:"trash";i:0;s:12:"post-trashed";i:0;}', 'yes'),
-(659, '_transient_timeout__woocommerce_helper_subscriptions', '1525438440', 'no'),
-(660, '_transient__woocommerce_helper_subscriptions', 'a:0:{}', 'no'),
-(661, '_site_transient_timeout_theme_roots', '1525439340', 'no'),
-(662, '_site_transient_theme_roots', 'a:4:{s:16:"ecommerce-market";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no');
+(663, '_transient_timeout_external_ip_address_::1', '1526381046', 'no'),
+(664, '_transient_external_ip_address_::1', '503 Over Quota Error &nbsp; Over Quota This application is temporarily over its serving quota. Please try again later.', 'no'),
+(667, '_site_transient_timeout_theme_roots', '1525778053', 'no'),
+(668, '_site_transient_theme_roots', 'a:4:{s:16:"ecommerce-market";s:7:"/themes";s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";}', 'no'),
+(669, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1525776256;s:7:"checked";a:4:{s:16:"ecommerce-market";s:5:"1.0.6";s:13:"twentyfifteen";s:3:"1.9";s:15:"twentyseventeen";s:3:"1.5";s:13:"twentysixteen";s:3:"1.4";}s:8:"response";a:1:{s:16:"ecommerce-market";a:4:{s:5:"theme";s:16:"ecommerce-market";s:11:"new_version";s:5:"1.0.8";s:3:"url";s:46:"https://wordpress.org/themes/ecommerce-market/";s:7:"package";s:64:"https://downloads.wordpress.org/theme/ecommerce-market.1.0.8.zip";}}s:12:"translations";a:0:{}}', 'no');
+INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
+(670, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1525776257;s:7:"checked";a:8:{s:36:"contact-form-7/wp-contact-form-7.php";s:5:"5.0.1";s:19:"jetpack/jetpack.php";s:3:"6.0";s:27:"woocommerce/woocommerce.php";s:5:"3.3.5";s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";s:5:"1.5.3";s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";s:3:"2.3";s:45:"woocommerce-services/woocommerce-services.php";s:6:"1.12.3";s:41:"wordpress-importer/wordpress-importer.php";s:5:"0.6.4";s:34:"yith-woocommerce-wishlist/init.php";s:5:"2.2.1";}s:8:"response";a:2:{s:19:"jetpack/jetpack.php";O:8:"stdClass":12:{s:2:"id";s:21:"w.org/plugins/jetpack";s:4:"slug";s:7:"jetpack";s:6:"plugin";s:19:"jetpack/jetpack.php";s:11:"new_version";s:3:"6.1";s:3:"url";s:38:"https://wordpress.org/plugins/jetpack/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/jetpack.6.1.zip";s:5:"icons";a:3:{s:2:"2x";s:60:"https://ps.w.org/jetpack/assets/icon-256x256.png?rev=1791404";s:2:"1x";s:52:"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404";s:3:"svg";s:52:"https://ps.w.org/jetpack/assets/icon.svg?rev=1791404";}s:7:"banners";a:2:{s:2:"2x";s:63:"https://ps.w.org/jetpack/assets/banner-1544x500.png?rev=1791404";s:2:"1x";s:62:"https://ps.w.org/jetpack/assets/banner-772x250.png?rev=1791404";}s:11:"banners_rtl";a:0:{}s:6:"tested";s:5:"4.9.5";s:12:"requires_php";N;s:13:"compatibility";O:8:"stdClass":0:{}}s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";O:8:"stdClass":12:{s:2:"id";s:57:"w.org/plugins/woocommerce-gateway-paypal-express-checkout";s:4:"slug";s:43:"woocommerce-gateway-paypal-express-checkout";s:6:"plugin";s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";s:11:"new_version";s:5:"1.5.4";s:3:"url";s:74:"https://wordpress.org/plugins/woocommerce-gateway-paypal-express-checkout/";s:7:"package";s:92:"https://downloads.wordpress.org/plugin/woocommerce-gateway-paypal-express-checkout.1.5.4.zip";s:5:"icons";a:2:{s:2:"2x";s:96:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/icon-256x256.png?rev=1410389";s:2:"1x";s:96:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/icon-128x128.png?rev=1410389";}s:7:"banners";a:2:{s:2:"2x";s:99:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/banner-1544x500.png?rev=1410389";s:2:"1x";s:98:"https://ps.w.org/woocommerce-gateway-paypal-express-checkout/assets/banner-772x250.png?rev=1410389";}s:11:"banners_rtl";a:0:{}s:6:"tested";s:5:"4.9.0";s:12:"requires_php";N;s:13:"compatibility";O:8:"stdClass":0:{}}}s:12:"translations";a:0:{}s:9:"no_update";a:6:{s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":9:{s:2:"id";s:28:"w.org/plugins/contact-form-7";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:5:"5.0.1";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/contact-form-7.5.0.1.zip";s:5:"icons";a:2:{s:2:"2x";s:66:"https://ps.w.org/contact-form-7/assets/icon-256x256.png?rev=984007";s:2:"1x";s:66:"https://ps.w.org/contact-form-7/assets/icon-128x128.png?rev=984007";}s:7:"banners";a:2:{s:2:"2x";s:69:"https://ps.w.org/contact-form-7/assets/banner-1544x500.png?rev=860901";s:2:"1x";s:68:"https://ps.w.org/contact-form-7/assets/banner-772x250.png?rev=880427";}s:11:"banners_rtl";a:0:{}}s:27:"woocommerce/woocommerce.php";O:8:"stdClass":9:{s:2:"id";s:25:"w.org/plugins/woocommerce";s:4:"slug";s:11:"woocommerce";s:6:"plugin";s:27:"woocommerce/woocommerce.php";s:11:"new_version";s:5:"3.3.5";s:3:"url";s:42:"https://wordpress.org/plugins/woocommerce/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/woocommerce.3.3.5.zip";s:5:"icons";a:2:{s:2:"2x";s:64:"https://ps.w.org/woocommerce/assets/icon-256x256.png?rev=1440831";s:2:"1x";s:64:"https://ps.w.org/woocommerce/assets/icon-128x128.png?rev=1440831";}s:7:"banners";a:2:{s:2:"2x";s:67:"https://ps.w.org/woocommerce/assets/banner-1544x500.png?rev=1629184";s:2:"1x";s:66:"https://ps.w.org/woocommerce/assets/banner-772x250.png?rev=1629184";}s:11:"banners_rtl";a:0:{}}s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";O:8:"stdClass":9:{s:2:"id";s:52:"w.org/plugins/woocommerce-paypal-pro-payment-gateway";s:4:"slug";s:38:"woocommerce-paypal-pro-payment-gateway";s:6:"plugin";s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";s:11:"new_version";s:3:"2.3";s:3:"url";s:69:"https://wordpress.org/plugins/woocommerce-paypal-pro-payment-gateway/";s:7:"package";s:81:"https://downloads.wordpress.org/plugin/woocommerce-paypal-pro-payment-gateway.zip";s:5:"icons";a:1:{s:2:"1x";s:91:"https://ps.w.org/woocommerce-paypal-pro-payment-gateway/assets/icon-128x128.png?rev=1130363";}s:7:"banners";a:1:{s:2:"1x";s:93:"https://ps.w.org/woocommerce-paypal-pro-payment-gateway/assets/banner-772x250.png?rev=1130363";}s:11:"banners_rtl";a:0:{}}s:45:"woocommerce-services/woocommerce-services.php";O:8:"stdClass":9:{s:2:"id";s:34:"w.org/plugins/woocommerce-services";s:4:"slug";s:20:"woocommerce-services";s:6:"plugin";s:45:"woocommerce-services/woocommerce-services.php";s:11:"new_version";s:6:"1.12.3";s:3:"url";s:51:"https://wordpress.org/plugins/woocommerce-services/";s:7:"package";s:70:"https://downloads.wordpress.org/plugin/woocommerce-services.1.12.3.zip";s:5:"icons";a:2:{s:2:"2x";s:73:"https://ps.w.org/woocommerce-services/assets/icon-256x256.png?rev=1586175";s:2:"1x";s:73:"https://ps.w.org/woocommerce-services/assets/icon-128x128.png?rev=1586175";}s:7:"banners";a:2:{s:2:"2x";s:76:"https://ps.w.org/woocommerce-services/assets/banner-1544x500.png?rev=1598183";s:2:"1x";s:75:"https://ps.w.org/woocommerce-services/assets/banner-772x250.png?rev=1598183";}s:11:"banners_rtl";a:0:{}}s:41:"wordpress-importer/wordpress-importer.php";O:8:"stdClass":9:{s:2:"id";s:32:"w.org/plugins/wordpress-importer";s:4:"slug";s:18:"wordpress-importer";s:6:"plugin";s:41:"wordpress-importer/wordpress-importer.php";s:11:"new_version";s:5:"0.6.4";s:3:"url";s:49:"https://wordpress.org/plugins/wordpress-importer/";s:7:"package";s:67:"https://downloads.wordpress.org/plugin/wordpress-importer.0.6.4.zip";s:5:"icons";a:1:{s:7:"default";s:69:"https://s.w.org/plugins/geopattern-icon/wordpress-importer_5696b3.svg";}s:7:"banners";a:1:{s:2:"1x";s:72:"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654";}s:11:"banners_rtl";a:0:{}}s:34:"yith-woocommerce-wishlist/init.php";O:8:"stdClass":9:{s:2:"id";s:39:"w.org/plugins/yith-woocommerce-wishlist";s:4:"slug";s:25:"yith-woocommerce-wishlist";s:6:"plugin";s:34:"yith-woocommerce-wishlist/init.php";s:11:"new_version";s:5:"2.2.1";s:3:"url";s:56:"https://wordpress.org/plugins/yith-woocommerce-wishlist/";s:7:"package";s:74:"https://downloads.wordpress.org/plugin/yith-woocommerce-wishlist.2.2.1.zip";s:5:"icons";a:1:{s:2:"1x";s:78:"https://ps.w.org/yith-woocommerce-wishlist/assets/icon-128x128.jpg?rev=1461336";}s:7:"banners";a:2:{s:2:"2x";s:81:"https://ps.w.org/yith-woocommerce-wishlist/assets/banner-1544x500.jpg?rev=1461336";s:2:"1x";s:80:"https://ps.w.org/yith-woocommerce-wishlist/assets/banner-772x250.jpg?rev=1461336";}s:11:"banners_rtl";a:0:{}}}}', 'no'),
+(674, '_transient_timeout_jetpack_https_test', '1525863091', 'no'),
+(675, '_transient_jetpack_https_test', '1', 'no'),
+(676, '_transient_timeout_jetpack_https_test_message', '1525863091', 'no'),
+(677, '_transient_jetpack_https_test_message', '', 'no'),
+(678, '_site_transient_timeout_browser_7d3bbe90e9c9cc2510c72ffd49db1a06', '1526381495', 'no'),
+(679, '_site_transient_browser_7d3bbe90e9c9cc2510c72ffd49db1a06', 'a:10:{s:4:"name";s:6:"Chrome";s:7:"version";s:13:"66.0.3359.117";s:8:"platform";s:5:"Linux";s:10:"update_url";s:29:"https://www.google.com/chrome";s:7:"img_src";s:43:"http://s.w.org/images/browsers/chrome.png?1";s:11:"img_src_ssl";s:44:"https://s.w.org/images/browsers/chrome.png?1";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;s:6:"mobile";b:0;}', 'no'),
+(684, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1525819897', 'no'),
+(685, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class="rss-widget"><ul><li>An error has occurred, which probably means the feed is down. Try again later.</li></ul></div><div class="rss-widget"><ul><li>An error has occurred, which probably means the feed is down. Try again later.</li></ul></div>', 'no'),
+(686, '_site_transient_timeout_community-events-4501c091b0366d76ea3218b6cfdd8097', '1525819899', 'no'),
+(687, '_site_transient_community-events-4501c091b0366d76ea3218b6cfdd8097', 'a:2:{s:8:"location";a:1:{s:2:"ip";s:2:"::";}s:6:"events";a:1:{i:0;a:7:{s:4:"type";s:6:"meetup";s:5:"title";s:38:"WordPress 15th Anniversary Celebration";s:3:"url";s:56:"https://www.meetup.com/WordPressMumbai/events/249605456/";s:6:"meetup";s:23:"Mumbai WordPress Meetup";s:10:"meetup_url";s:39:"https://www.meetup.com/WordPressMumbai/";s:4:"date";s:19:"2018-05-27 18:00:00";s:8:"location";a:4:{s:8:"location";s:17:"Mumbai, MH, India";s:7:"country";s:2:"IN";s:8:"latitude";d:18.959999084473;s:9:"longitude";d:72.819999694824;}}}}', 'no'),
+(689, '_transient_timeout_plugin_slugs', '1525864980', 'no'),
+(690, '_transient_plugin_slugs', 'a:8:{i:0;s:36:"contact-form-7/wp-contact-form-7.php";i:1;s:19:"jetpack/jetpack.php";i:2;s:27:"woocommerce/woocommerce.php";i:3;s:91:"woocommerce-gateway-paypal-express-checkout/woocommerce-gateway-paypal-express-checkout.php";i:4;s:57:"woocommerce-paypal-pro-payment-gateway/woo-paypal-pro.php";i:5;s:45:"woocommerce-services/woocommerce-services.php";i:6;s:41:"wordpress-importer/wordpress-importer.php";i:7;s:34:"yith-woocommerce-wishlist/init.php";}', 'no'),
+(696, '_transient_timeout_jetpack_idc_allowed', '1525787650', 'no'),
+(697, '_transient_jetpack_idc_allowed', '1', 'no');
 
 -- --------------------------------------------------------
 
@@ -897,7 +894,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (385, 68, '_sale_price', ''),
 (386, 68, '_sale_price_dates_from', ''),
 (387, 68, '_sale_price_dates_to', ''),
-(388, 68, 'total_sales', '2'),
+(388, 68, 'total_sales', '3'),
 (389, 68, '_tax_status', 'taxable'),
 (390, 68, '_tax_class', ''),
 (391, 68, '_manage_stock', 'no'),
@@ -1972,7 +1969,147 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1459, 107, '_recorded_sales', 'yes'),
 (1460, 107, '_recorded_coupon_usage_counts', 'yes'),
 (1461, 107, '_order_stock_reduced', 'yes'),
-(1462, 106, '_edit_last', '1');
+(1462, 106, '_edit_last', '1'),
+(1463, 108, '_order_key', 'wc_order_5af181502181f'),
+(1464, 108, '_customer_user', '1'),
+(1465, 108, '_payment_method', 'paypal'),
+(1466, 108, '_payment_method_title', 'PayPal'),
+(1467, 108, '_transaction_id', ''),
+(1468, 108, '_customer_ip_address', '::1'),
+(1469, 108, '_customer_user_agent', 'mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/66.0.3359.117 safari/537.36'),
+(1470, 108, '_created_via', 'checkout'),
+(1471, 108, '_date_completed', ''),
+(1472, 108, '_completed_date', ''),
+(1473, 108, '_date_paid', ''),
+(1474, 108, '_paid_date', ''),
+(1475, 108, '_cart_hash', 'ccadb833cc6d5bbfceedbd099b3a4717'),
+(1476, 108, '_billing_first_name', 'Test'),
+(1477, 108, '_billing_last_name', 'brogaard'),
+(1478, 108, '_billing_company', ''),
+(1479, 108, '_billing_address_1', 'Vesterbrogade 3'),
+(1480, 108, '_billing_address_2', ''),
+(1481, 108, '_billing_city', 'K�benhavn'),
+(1482, 108, '_billing_state', ''),
+(1483, 108, '_billing_postcode', '1630'),
+(1484, 108, '_billing_country', 'DK'),
+(1485, 108, '_billing_email', 'testbrogaard@gmail.com'),
+(1486, 108, '_billing_phone', ''),
+(1487, 108, '_shipping_first_name', 'Test'),
+(1488, 108, '_shipping_last_name', 'brogaard'),
+(1489, 108, '_shipping_company', ''),
+(1490, 108, '_shipping_address_1', 'Vesterbrogade 3'),
+(1491, 108, '_shipping_address_2', ''),
+(1492, 108, '_shipping_city', 'K�benhavn'),
+(1493, 108, '_shipping_state', ''),
+(1494, 108, '_shipping_postcode', '1630'),
+(1495, 108, '_shipping_country', 'DK'),
+(1496, 108, '_order_currency', 'DKK'),
+(1497, 108, '_cart_discount', '0'),
+(1498, 108, '_cart_discount_tax', '0'),
+(1499, 108, '_order_shipping', '0.00'),
+(1500, 108, '_order_shipping_tax', '0'),
+(1501, 108, '_order_tax', '0'),
+(1502, 108, '_order_total', '45.00'),
+(1503, 108, '_order_version', '3.3.5'),
+(1504, 108, '_prices_include_tax', 'no'),
+(1505, 108, '_billing_address_index', 'Test brogaard  Vesterbrogade 3  K�benhavn  1630 DK testbrogaard@gmail.com '),
+(1506, 108, '_shipping_address_index', 'Test brogaard  Vesterbrogade 3  K�benhavn  1630 DK'),
+(1507, 108, '_edit_lock', '1525776814:1'),
+(1508, 109, '_order_key', 'wc_order_5af1872339d8d'),
+(1509, 109, '_customer_user', '1'),
+(1510, 109, '_payment_method', 'paypal'),
+(1511, 109, '_payment_method_title', 'PayPal'),
+(1512, 109, '_transaction_id', ''),
+(1513, 109, '_customer_ip_address', '::1'),
+(1514, 109, '_customer_user_agent', 'mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/66.0.3359.117 safari/537.36'),
+(1515, 109, '_created_via', 'checkout'),
+(1516, 109, '_date_completed', ''),
+(1517, 109, '_completed_date', ''),
+(1518, 109, '_date_paid', ''),
+(1519, 109, '_paid_date', ''),
+(1520, 109, '_cart_hash', '43d5419ca0d494d3131224c45054862b'),
+(1521, 109, '_billing_first_name', 'Test'),
+(1522, 109, '_billing_last_name', 'brogaard'),
+(1523, 109, '_billing_company', ''),
+(1524, 109, '_billing_address_1', 'Vesterbrogade 3'),
+(1525, 109, '_billing_address_2', ''),
+(1526, 109, '_billing_city', 'K�benhavn'),
+(1527, 109, '_billing_state', ''),
+(1528, 109, '_billing_postcode', '1630'),
+(1529, 109, '_billing_country', 'DK'),
+(1530, 109, '_billing_email', 'testbrogaard@gmail.com'),
+(1531, 109, '_billing_phone', ''),
+(1532, 109, '_shipping_first_name', ''),
+(1533, 109, '_shipping_last_name', ''),
+(1534, 109, '_shipping_company', ''),
+(1535, 109, '_shipping_address_1', ''),
+(1536, 109, '_shipping_address_2', ''),
+(1537, 109, '_shipping_city', ''),
+(1538, 109, '_shipping_state', ''),
+(1539, 109, '_shipping_postcode', ''),
+(1540, 109, '_shipping_country', ''),
+(1541, 109, '_order_currency', 'DKK'),
+(1542, 109, '_cart_discount', '0'),
+(1543, 109, '_cart_discount_tax', '0'),
+(1544, 109, '_order_shipping', '0.00'),
+(1545, 109, '_order_shipping_tax', '0'),
+(1546, 109, '_order_tax', '0'),
+(1547, 109, '_order_total', '15.00'),
+(1548, 109, '_order_version', '3.3.5'),
+(1549, 109, '_prices_include_tax', 'no'),
+(1550, 109, '_billing_address_index', 'Test brogaard  Vesterbrogade 3  K�benhavn  1630 DK testbrogaard@gmail.com '),
+(1551, 109, '_shipping_address_index', '        '),
+(1552, 109, '_edit_lock', '1525778205:1'),
+(1553, 110, '_order_key', 'wc_order_5af188232d0de'),
+(1554, 110, '_customer_user', '1'),
+(1555, 110, '_payment_method', 'ppec_paypal'),
+(1556, 110, '_payment_method_title', 'PayPal Express Checkout'),
+(1557, 110, '_transaction_id', '28S754882S846781T'),
+(1558, 110, '_customer_ip_address', '::1'),
+(1559, 110, '_customer_user_agent', 'mozilla/5.0 (x11; linux x86_64) applewebkit/537.36 (khtml, like gecko) chrome/66.0.3359.117 safari/537.36'),
+(1560, 110, '_created_via', 'checkout'),
+(1561, 110, '_date_completed', ''),
+(1562, 110, '_completed_date', ''),
+(1563, 110, '_date_paid', '1525778495'),
+(1564, 110, '_paid_date', '2018-05-08 11:21:35'),
+(1565, 110, '_cart_hash', 'dae023fd7a60a13b3472056c65c08eef'),
+(1566, 110, '_billing_first_name', 'Test'),
+(1567, 110, '_billing_last_name', 'brogaard'),
+(1568, 110, '_billing_company', ''),
+(1569, 110, '_billing_address_1', 'Vesterbrogade 3'),
+(1570, 110, '_billing_address_2', ''),
+(1571, 110, '_billing_city', 'K�benhavn'),
+(1572, 110, '_billing_state', ''),
+(1573, 110, '_billing_postcode', '1630'),
+(1574, 110, '_billing_country', 'DK'),
+(1575, 110, '_billing_email', 'testbrogaard@gmail.com'),
+(1576, 110, '_billing_phone', ''),
+(1577, 110, '_shipping_first_name', 'Test'),
+(1578, 110, '_shipping_last_name', 'brogaard'),
+(1579, 110, '_shipping_company', ''),
+(1580, 110, '_shipping_address_1', 'Vesterbrogade 3'),
+(1581, 110, '_shipping_address_2', ''),
+(1582, 110, '_shipping_city', 'K�benhavn'),
+(1583, 110, '_shipping_state', ''),
+(1584, 110, '_shipping_postcode', '1630'),
+(1585, 110, '_shipping_country', 'DK'),
+(1586, 110, '_order_currency', 'DKK'),
+(1587, 110, '_cart_discount', '0'),
+(1588, 110, '_cart_discount_tax', '0'),
+(1589, 110, '_order_shipping', '0.00'),
+(1590, 110, '_order_shipping_tax', '0'),
+(1591, 110, '_order_tax', '0'),
+(1592, 110, '_order_total', '25.00'),
+(1593, 110, '_order_version', '3.3.5'),
+(1594, 110, '_prices_include_tax', 'no'),
+(1595, 110, '_billing_address_index', 'Test brogaard  Vesterbrogade 3  K�benhavn  1630 DK testbrogaard@gmail.com '),
+(1596, 110, '_shipping_address_index', 'Test brogaard  Vesterbrogade 3  K�benhavn  1630 DK'),
+(1597, 110, '_paypal_status', 'completed'),
+(1598, 110, '_woo_pp_txnData', 'a:2:{s:15:"refundable_txns";a:1:{i:0;a:4:{s:5:"txnID";s:17:"28S754882S846781T";s:6:"amount";s:5:"25.00";s:15:"refunded_amount";i:0;s:6:"status";s:9:"Completed";}}s:8:"txn_type";s:4:"sale";}'),
+(1599, 110, '_download_permissions_granted', 'yes'),
+(1600, 110, '_recorded_sales', 'yes'),
+(1601, 110, '_recorded_coupon_usage_counts', 'yes'),
+(1602, 110, '_order_stock_reduced', 'yes');
 
 -- --------------------------------------------------------
 
@@ -2057,8 +2194,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (103, 1, '2018-05-04 10:39:37', '2018-05-04 10:39:37', '', 'Order &ndash; May 4, 2018 @ 10:39 AM', '', 'wc-refunded', 'open', 'closed', 'order_5aec386941c5d', 'order-may-04-2018-1039-am', '', '', '2018-05-04 11:05:49', '2018-05-04 11:05:49', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=103', 0, 'shop_order', '', 3),
 (104, 1, '2018-05-04 11:05:43', '2018-05-04 11:05:43', '', 'Refund &ndash; May 04, 2018 @ 11:05 AM', '', 'wc-completed', 'closed', 'closed', 'order_5aec3e8758111', 'refund-may-04-2018-1105-am', '', '', '2018-05-04 11:05:43', '2018-05-04 11:05:43', '', 103, 'http://localhost/brogaard/?shop_order_refund=refund-may-04-2018-1105-am', 0, 'shop_order_refund', '', 0),
 (105, 1, '2018-05-04 11:10:43', '2018-05-04 11:10:43', '', 'Order &ndash; May 4, 2018 @ 11:10 AM', '', 'trash', 'closed', 'closed', 'order_5aec3fb3627f6', 'order-may-04-2018-1110-am__trashed', '', '', '2018-05-04 12:16:27', '2018-05-04 12:16:27', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=105', 0, 'shop_order', '', 0),
-(106, 1, '2018-05-04 12:16:54', '2018-05-04 12:16:54', '', 'Order &ndash; May 4, 2018 @ 12:16 PM', '', 'wc-pending', 'closed', 'closed', 'order_5aec4f369b082', 'order-may-04-2018-1216-pm', '', '', '2018-05-04 12:22:34', '2018-05-04 12:22:34', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=106', 0, 'shop_order', '', 1),
-(107, 1, '2018-05-04 12:22:03', '2018-05-04 12:22:03', '', 'Order &ndash; May 4, 2018 @ 12:22 PM', '', 'wc-processing', 'open', 'closed', 'order_5aec506b7677b', 'order-may-04-2018-1222-pm', '', '', '2018-05-04 12:22:09', '2018-05-04 12:22:09', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=107', 0, 'shop_order', '', 1);
+(106, 1, '2018-05-04 12:16:54', '2018-05-04 12:16:54', '', 'Order &ndash; May 4, 2018 @ 12:16 PM', '', 'wc-cancelled', 'closed', 'closed', 'order_5aec4f369b082', 'order-may-04-2018-1216-pm', '', '', '2018-05-08 10:44:07', '2018-05-08 10:44:07', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=106', 0, 'shop_order', '', 2),
+(107, 1, '2018-05-04 12:22:03', '2018-05-04 12:22:03', '', 'Order &ndash; May 4, 2018 @ 12:22 PM', '', 'wc-processing', 'open', 'closed', 'order_5aec506b7677b', 'order-may-04-2018-1222-pm', '', '', '2018-05-04 12:22:09', '2018-05-04 12:22:09', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=107', 0, 'shop_order', '', 1),
+(108, 1, '2018-05-08 10:52:00', '2018-05-08 10:52:00', '', 'Order &ndash; May 8, 2018 @ 10:52 AM', '', 'wc-cancelled', 'open', 'closed', 'order_5af181502190a', 'order-may-08-2018-1052-am', '', '', '2018-05-08 12:54:10', '2018-05-08 12:54:10', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=108', 0, 'shop_order', '', 1),
+(109, 1, '2018-05-08 11:16:51', '2018-05-08 11:16:51', '', 'Order &ndash; May 8, 2018 @ 11:16 AM', '', 'wc-cancelled', 'open', 'closed', 'order_5af1872339e5b', 'order-may-08-2018-1116-am', '', '', '2018-05-08 12:54:10', '2018-05-08 12:54:10', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=109', 0, 'shop_order', '', 1),
+(110, 1, '2018-05-08 11:21:07', '2018-05-08 11:21:07', '', 'Order &ndash; May 8, 2018 @ 11:21 AM', '', 'wc-processing', 'open', 'closed', 'order_5af188232d1f7', 'order-may-08-2018-1121-am', '', '', '2018-05-08 11:21:35', '2018-05-08 11:21:35', '', 0, 'http://localhost/brogaard/?post_type=shop_order&#038;p=110', 0, 'shop_order', '', 1);
 
 -- --------------------------------------------------------
 
@@ -2303,11 +2443,11 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', 'yith_wcwl_panel'),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:3:{s:64:"a49254001516049d73065e3fa5ad982c53fefc206cf4038ed8eea7da83fffb4d";a:4:{s:10:"expiration";i:1525428178;s:2:"ip";s:3:"::1";s:2:"ua";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36";s:5:"login";i:1525255378;}s:64:"ebde499fc5c064af043a021f5e4cfa8bb8ca5e43fbb17e3afbdc53973be20a90";a:4:{s:10:"expiration";i:1525510536;s:2:"ip";s:3:"::1";s:2:"ua";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36";s:5:"login";i:1525337736;}s:64:"3a37ca064237e331041bb63182099898867333521eeb8c3a8c7d7200779ac536";a:4:{s:10:"expiration";i:1525600950;s:2:"ip";s:3:"::1";s:2:"ua";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36";s:5:"login";i:1525428150;}}'),
+(16, 1, 'session_tokens', 'a:1:{s:64:"cd95181b11ed6d3f0b191d6b301c83081554465f8f75f959b89cc448559fbef2";a:4:{s:10:"expiration";i:1525949491;s:2:"ip";s:3:"::1";s:2:"ua";s:105:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36";s:5:"login";i:1525776691;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (18, 1, 'community-events-location', 'a:1:{s:2:"ip";s:2:"::";}'),
 (20, 1, 'dismissed_template_files_notice', '1'),
-(21, 1, 'last_update', '1525437062'),
+(21, 1, 'last_update', '1525778467'),
 (22, 1, 'billing_first_name', 'Test'),
 (23, 1, 'billing_last_name', 'brogaard'),
 (24, 1, 'billing_company', ''),
@@ -2324,13 +2464,13 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (35, 1, 'shipping_city', 'K�benhavn'),
 (36, 1, 'shipping_postcode', '1630'),
 (37, 1, 'shipping_country', 'DK'),
-(53, 1, 'billing_state', 'Danmark'),
-(54, 1, 'shipping_state', 'Danmark'),
+(53, 1, 'billing_state', ''),
+(54, 1, 'shipping_state', ''),
 (86, 1, 'closedpostboxes_shop_order', 'a:0:{}'),
 (87, 1, 'metaboxhidden_shop_order', 'a:0:{}'),
-(91, 1, 'shipping_method', 'a:1:{i:0;s:11:"flat_rate:1";}'),
 (95, 1, 'paying_customer', '1'),
-(99, 1, '_woocommerce_persistent_cart_1', 'a:1:{s:4:"cart";a:0:{}}');
+(106, 1, 'shipping_method', 'a:1:{i:0;s:11:"flat_rate:1";}'),
+(109, 1, '_woocommerce_persistent_cart_1', 'a:1:{s:4:"cart";a:1:{s:32:"a3f390d88e4c41f2747bfa2f1b5f87db";a:10:{s:3:"key";s:32:"a3f390d88e4c41f2747bfa2f1b5f87db";s:10:"product_id";i:68;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:13:"line_tax_data";a:2:{s:8:"subtotal";a:0:{}s:5:"total";a:0:{}}s:13:"line_subtotal";d:25;s:17:"line_subtotal_tax";i:0;s:10:"line_total";d:25;s:8:"line_tax";i:0;}}}');
 
 -- --------------------------------------------------------
 
@@ -2688,7 +2828,44 @@ INSERT INTO `wp_woocommerce_order_itemmeta` (`meta_id`, `order_item_id`, `meta_k
 (234, 33, 'cost', '0.00'),
 (235, 33, 'total_tax', '0'),
 (236, 33, 'taxes', 'a:1:{s:5:"total";a:0:{}}'),
-(237, 33, 'Items', 'Hoodie with Logo &times; 1');
+(237, 33, 'Items', 'Hoodie with Logo &times; 1'),
+(238, 34, '_product_id', '46'),
+(239, 34, '_variation_id', '0'),
+(240, 34, '_qty', '1'),
+(241, 34, '_tax_class', ''),
+(242, 34, '_line_subtotal', '45'),
+(243, 34, '_line_subtotal_tax', '0'),
+(244, 34, '_line_total', '45'),
+(245, 34, '_line_tax', '0'),
+(246, 34, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(247, 35, 'method_id', 'flat_rate:1'),
+(248, 35, 'cost', '0.00'),
+(249, 35, 'total_tax', '0'),
+(250, 35, 'taxes', 'a:1:{s:5:"total";a:0:{}}'),
+(251, 35, 'Items', 'Hoodie with Logo &times; 1'),
+(252, 36, '_product_id', '73'),
+(253, 36, '_variation_id', '0'),
+(254, 36, '_qty', '1'),
+(255, 36, '_tax_class', ''),
+(256, 36, '_line_subtotal', '15'),
+(257, 36, '_line_subtotal_tax', '0'),
+(258, 36, '_line_total', '15'),
+(259, 36, '_line_tax', '0'),
+(260, 36, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(261, 37, '_product_id', '68'),
+(262, 37, '_variation_id', '0'),
+(263, 37, '_qty', '1'),
+(264, 37, '_tax_class', ''),
+(265, 37, '_line_subtotal', '25'),
+(266, 37, '_line_subtotal_tax', '0'),
+(267, 37, '_line_total', '25'),
+(268, 37, '_line_tax', '0'),
+(269, 37, '_line_tax_data', 'a:2:{s:5:"total";a:0:{}s:8:"subtotal";a:0:{}}'),
+(270, 38, 'method_id', 'flat_rate:1'),
+(271, 38, 'cost', '0.00'),
+(272, 38, 'total_tax', '0'),
+(273, 38, 'taxes', 'a:1:{s:5:"total";a:0:{}}'),
+(274, 38, 'Items', 'Long Sleeve Tee &times; 1');
 
 -- --------------------------------------------------------
 
@@ -2735,7 +2912,12 @@ INSERT INTO `wp_woocommerce_order_items` (`order_item_id`, `order_item_name`, `o
 (30, 'Long Sleeve Tee', 'line_item', 106),
 (31, 'Flat rate', 'shipping', 106),
 (32, 'Hoodie with Logo', 'line_item', 107),
-(33, 'Flat rate', 'shipping', 107);
+(33, 'Flat rate', 'shipping', 107),
+(34, 'Hoodie with Logo', 'line_item', 108),
+(35, 'Flat rate', 'shipping', 108),
+(36, 'Album', 'line_item', 109),
+(37, 'Long Sleeve Tee', 'line_item', 110),
+(38, 'Flat rate', 'shipping', 110);
 
 -- --------------------------------------------------------
 
@@ -2783,8 +2965,7 @@ CREATE TABLE `wp_woocommerce_sessions` (
 --
 
 INSERT INTO `wp_woocommerce_sessions` (`session_id`, `session_key`, `session_value`, `session_expiry`) VALUES
-(224, '1', 'a:14:{s:8:"customer";s:870:"a:26:{s:2:"id";s:1:"1";s:13:"date_modified";s:25:"2018-05-04T12:31:02+00:00";s:8:"postcode";s:4:"1630";s:4:"city";s:11:"K�benhavn";s:9:"address_1";s:15:"Vesterbrogade 3";s:7:"address";s:15:"Vesterbrogade 3";s:9:"address_2";s:0:"";s:5:"state";s:7:"Danmark";s:7:"country";s:2:"DK";s:17:"shipping_postcode";s:4:"1630";s:13:"shipping_city";s:11:"K�benhavn";s:18:"shipping_address_1";s:15:"Vesterbrogade 3";s:16:"shipping_address";s:15:"Vesterbrogade 3";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:7:"Danmark";s:16:"shipping_country";s:2:"DK";s:13:"is_vat_exempt";s:0:"";s:19:"calculated_shipping";s:0:"";s:10:"first_name";s:4:"Test";s:9:"last_name";s:8:"brogaard";s:7:"company";s:0:"";s:5:"phone";s:0:"";s:5:"email";s:22:"testbrogaard@gmail.com";s:19:"shipping_first_name";s:4:"Test";s:18:"shipping_last_name";s:8:"brogaard";s:16:"shipping_company";s:0:"";}";s:4:"cart";s:6:"a:0:{}";s:11:"cart_totals";s:367:"a:15:{s:8:"subtotal";i:0;s:12:"subtotal_tax";i:0;s:14:"shipping_total";i:0;s:12:"shipping_tax";i:0;s:14:"shipping_taxes";a:0:{}s:14:"discount_total";i:0;s:12:"discount_tax";i:0;s:19:"cart_contents_total";i:0;s:17:"cart_contents_tax";i:0;s:19:"cart_contents_taxes";a:0:{}s:9:"fee_total";i:0;s:7:"fee_tax";i:0;s:9:"fee_taxes";a:0:{}s:5:"total";i:0;s:9:"total_tax";i:0;}";s:15:"applied_coupons";s:6:"a:0:{}";s:22:"coupon_discount_totals";s:6:"a:0:{}";s:26:"coupon_discount_tax_totals";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:10:"wc_notices";N;s:22:"shipping_for_package_0";s:382:"a:2:{s:12:"package_hash";s:40:"wc_ship_e3289f77df069526b874219a7b6b442c";s:5:"rates";a:1:{s:11:"flat_rate:1";O:16:"WC_Shipping_Rate":2:{s:7:"\0*\0data";a:6:{s:2:"id";s:11:"flat_rate:1";s:9:"method_id";s:9:"flat_rate";s:11:"instance_id";i:1;s:5:"label";s:9:"Flat rate";s:4:"cost";s:4:"0.00";s:5:"taxes";a:0:{}}s:12:"\0*\0meta_data";a:1:{s:5:"Items";s:26:"Hoodie with Logo &times; 1";}}}}";s:25:"previous_shipping_methods";s:39:"a:1:{i:0;a:1:{i:0;s:11:"flat_rate:1";}}";s:22:"shipping_method_counts";s:14:"a:1:{i:0;i:1;}";s:21:"chosen_payment_method";s:11:"ppec_paypal";s:22:"order_awaiting_payment";N;s:23:"chosen_shipping_methods";s:29:"a:1:{i:0;s:11:"flat_rate:1";}";}', 1525600953),
-(139, '4758c424281f61fc23f264043cc29f86', 'a:14:{s:4:"cart";s:6:"a:0:{}";s:11:"cart_totals";s:367:"a:15:{s:8:"subtotal";i:0;s:12:"subtotal_tax";i:0;s:14:"shipping_total";i:0;s:12:"shipping_tax";i:0;s:14:"shipping_taxes";a:0:{}s:14:"discount_total";i:0;s:12:"discount_tax";i:0;s:19:"cart_contents_total";i:0;s:17:"cart_contents_tax";i:0;s:19:"cart_contents_taxes";a:0:{}s:9:"fee_total";i:0;s:7:"fee_tax";i:0;s:9:"fee_taxes";a:0:{}s:5:"total";i:0;s:9:"total_tax";i:0;}";s:15:"applied_coupons";s:6:"a:0:{}";s:22:"coupon_discount_totals";s:6:"a:0:{}";s:26:"coupon_discount_tax_totals";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:8:"customer";s:860:"a:26:{s:2:"id";s:1:"1";s:13:"date_modified";s:25:"2018-05-03T13:00:20+00:00";s:8:"postcode";s:5:"99518";s:4:"city";s:9:"Anchorage";s:9:"address_1";s:15:"5501 "A" Street";s:7:"address";s:15:"5501 "A" Street";s:9:"address_2";s:0:"";s:5:"state";s:2:"AK";s:7:"country";s:2:"US";s:17:"shipping_postcode";s:5:"99518";s:13:"shipping_city";s:9:"Anchorage";s:18:"shipping_address_1";s:15:"5501 "A" Street";s:16:"shipping_address";s:15:"5501 "A" Street";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:2:"AK";s:16:"shipping_country";s:2:"US";s:13:"is_vat_exempt";s:0:"";s:19:"calculated_shipping";s:0:"";s:10:"first_name";s:7:"Mangesh";s:9:"last_name";s:6:"Navale";s:7:"company";s:0:"";s:5:"phone";s:0:"";s:5:"email";s:24:"testpaypal1988@gmail.com";s:19:"shipping_first_name";s:7:"Mangesh";s:18:"shipping_last_name";s:6:"Navale";s:16:"shipping_company";s:0:"";}";s:21:"chosen_payment_method";s:11:"ppec_paypal";s:22:"order_awaiting_payment";N;s:22:"shipping_for_package_0";s:382:"a:2:{s:12:"package_hash";s:40:"wc_ship_2f1e537fc9f1d41f0fecfff93e492120";s:5:"rates";a:1:{s:11:"flat_rate:2";O:16:"WC_Shipping_Rate":2:{s:7:"\0*\0data";a:6:{s:2:"id";s:11:"flat_rate:2";s:9:"method_id";s:9:"flat_rate";s:11:"instance_id";i:2;s:5:"label";s:9:"Flat rate";s:4:"cost";s:4:"0.00";s:5:"taxes";a:0:{}}s:12:"\0*\0meta_data";a:1:{s:5:"Items";s:26:"Hoodie with Logo &times; 1";}}}}";s:25:"previous_shipping_methods";s:39:"a:1:{i:0;a:1:{i:0;s:11:"flat_rate:2";}}";s:22:"shipping_method_counts";s:14:"a:1:{i:0;i:1;}";s:10:"wc_notices";N;s:23:"chosen_shipping_methods";s:29:"a:1:{i:0;s:11:"flat_rate:2";}";}', 1525504826);
+(263, '92ec81fa6252b444c605d7fac6a13aab', 'a:14:{s:4:"cart";s:354:"a:1:{s:32:"a3f390d88e4c41f2747bfa2f1b5f87db";a:10:{s:3:"key";s:32:"a3f390d88e4c41f2747bfa2f1b5f87db";s:10:"product_id";i:68;s:12:"variation_id";i:0;s:9:"variation";a:0:{}s:8:"quantity";i:1;s:13:"line_tax_data";a:2:{s:8:"subtotal";a:0:{}s:5:"total";a:0:{}}s:13:"line_subtotal";d:25;s:17:"line_subtotal_tax";i:0;s:10:"line_total";d:25;s:8:"line_tax";i:0;}}";s:11:"cart_totals";s:405:"a:15:{s:8:"subtotal";s:5:"25.00";s:12:"subtotal_tax";d:0;s:14:"shipping_total";s:4:"0.00";s:12:"shipping_tax";d:0;s:14:"shipping_taxes";a:0:{}s:14:"discount_total";d:0;s:12:"discount_tax";d:0;s:19:"cart_contents_total";s:5:"25.00";s:17:"cart_contents_tax";d:0;s:19:"cart_contents_taxes";a:0:{}s:9:"fee_total";s:4:"0.00";s:7:"fee_tax";d:0;s:9:"fee_taxes";a:0:{}s:5:"total";s:5:"25.00";s:9:"total_tax";d:0;}";s:15:"applied_coupons";s:6:"a:0:{}";s:22:"coupon_discount_totals";s:6:"a:0:{}";s:26:"coupon_discount_tax_totals";s:6:"a:0:{}";s:21:"removed_cart_contents";s:6:"a:0:{}";s:22:"shipping_for_package_0";s:381:"a:2:{s:12:"package_hash";s:40:"wc_ship_f0c13a6cb17535fe47248478f115e2eb";s:5:"rates";a:1:{s:11:"flat_rate:1";O:16:"WC_Shipping_Rate":2:{s:7:"\0*\0data";a:6:{s:2:"id";s:11:"flat_rate:1";s:9:"method_id";s:9:"flat_rate";s:11:"instance_id";i:1;s:5:"label";s:9:"Flat rate";s:4:"cost";s:4:"0.00";s:5:"taxes";a:0:{}}s:12:"\0*\0meta_data";a:1:{s:5:"Items";s:25:"Long Sleeve Tee &times; 1";}}}}";s:25:"previous_shipping_methods";s:39:"a:1:{i:0;a:1:{i:0;s:11:"flat_rate:1";}}";s:23:"chosen_shipping_methods";s:29:"a:1:{i:0;s:11:"flat_rate:1";}";s:22:"shipping_method_counts";s:14:"a:1:{i:0;i:1;}";s:8:"customer";s:857:"a:26:{s:2:"id";s:1:"1";s:13:"date_modified";s:25:"2018-05-08T11:21:07+00:00";s:8:"postcode";s:4:"1630";s:4:"city";s:11:"K�benhavn";s:9:"address_1";s:15:"Vesterbrogade 3";s:7:"address";s:15:"Vesterbrogade 3";s:9:"address_2";s:0:"";s:5:"state";s:0:"";s:7:"country";s:2:"DK";s:17:"shipping_postcode";s:4:"1630";s:13:"shipping_city";s:11:"K�benhavn";s:18:"shipping_address_1";s:15:"Vesterbrogade 3";s:16:"shipping_address";s:15:"Vesterbrogade 3";s:18:"shipping_address_2";s:0:"";s:14:"shipping_state";s:0:"";s:16:"shipping_country";s:2:"DK";s:13:"is_vat_exempt";s:0:"";s:19:"calculated_shipping";s:1:"1";s:10:"first_name";s:4:"Test";s:9:"last_name";s:8:"brogaard";s:7:"company";s:0:"";s:5:"phone";s:0:"";s:5:"email";s:22:"testbrogaard@gmail.com";s:19:"shipping_first_name";s:4:"Test";s:18:"shipping_last_name";s:8:"brogaard";s:16:"shipping_company";s:0:"";}";s:21:"chosen_payment_method";s:11:"ppec_paypal";s:10:"wc_notices";N;s:22:"order_awaiting_payment";N;}', 1525949061);
 
 -- --------------------------------------------------------
 
@@ -3170,7 +3351,7 @@ ALTER TABLE `wp_commentmeta`
 -- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
-  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `wp_links`
 --
@@ -3180,17 +3361,17 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=663;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=699;
 --
 -- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1463;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1603;
 --
 -- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
 --
 -- AUTO_INCREMENT for table `wp_termmeta`
 --
@@ -3210,7 +3391,7 @@ ALTER TABLE `wp_term_taxonomy`
 -- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 --
 -- AUTO_INCREMENT for table `wp_users`
 --
@@ -3250,12 +3431,12 @@ ALTER TABLE `wp_woocommerce_log`
 -- AUTO_INCREMENT for table `wp_woocommerce_order_itemmeta`
 --
 ALTER TABLE `wp_woocommerce_order_itemmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_order_items`
 --
 ALTER TABLE `wp_woocommerce_order_items`
-  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `order_item_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_payment_tokenmeta`
 --
@@ -3270,7 +3451,7 @@ ALTER TABLE `wp_woocommerce_payment_tokens`
 -- AUTO_INCREMENT for table `wp_woocommerce_sessions`
 --
 ALTER TABLE `wp_woocommerce_sessions`
-  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
+  MODIFY `session_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=264;
 --
 -- AUTO_INCREMENT for table `wp_woocommerce_shipping_zones`
 --
@@ -3300,7 +3481,7 @@ ALTER TABLE `wp_woocommerce_tax_rate_locations`
 -- AUTO_INCREMENT for table `wp_yith_wcwl`
 --
 ALTER TABLE `wp_yith_wcwl`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `wp_yith_wcwl_lists`
 --
