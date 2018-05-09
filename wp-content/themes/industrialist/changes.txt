@@ -1,0 +1,23 @@
+1.2.1
+- Updated Visual Composer to 5.2.1
+- Fixed potential security issue when saving theme options
+
+1.2
+- Added Woocommerce 3.1.1 compatibility
+- Updated Visual Composer to 5.2
+- Updated Revolution Slider to 5.4.5.1
+- Fixed https problem with links
+
+
+1.1
+- Added WooCommerce 2.6.11 compatibility
+- Updated FontAwesome Icons Pack to 4.7.0
+- Fixed third level menu appearance in left menu
+- Fixed output buffering in contact form 7 module
+- Fixed video in modal window
+- Fixed applying the scripts in certain conditionals
+
+1.0.1
+- Fixed dropdown cart layout
+- Fixed sidearea title color
+- Fixed dynamic first main color handling

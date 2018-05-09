@@ -1,0 +1,1 @@
+<?php echo industrialist_mikado_execute_shortcode('mkd_separator', array('position' => 'left'));

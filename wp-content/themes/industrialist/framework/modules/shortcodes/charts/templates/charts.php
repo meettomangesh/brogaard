@@ -1,0 +1,1 @@
+<canvas id="mkd-charts-canvas-<?php echo rand(); ?>"></canvas>

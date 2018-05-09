@@ -1,0 +1,40 @@
+.mkd-preload-background { background-image: url(http://localhost/brogaard/wp-content/themes/industrialist/assets/img/preload_pattern.png) !important;}
+
+.mkd-boxed .mkd-wrapper { background-attachment: fixed;}
+
+.mkd-smooth-transition-loader { background-color: #ffffff;}
+
+.mkd-content .mkd-content-inner > .mkd-full-width > .mkd-full-width-inner { padding-top: 66px;}
+
+.mkd-content .mkd-content-inner > .mkd-container > .mkd-container-inner { padding-top: 66px;}
+
+.mkd-header-standard-extended .mkd-page-header .mkd-logo-area .mkd-grid .mkd-vertical-align-containers { border: 0;}
+
+.mkd-full-width-wide-menu .mkd-drop-down .wide .second, .mkd-drop-down .second .inner > ul, .mkd-drop-down .second .inner ul li ul, .mkd-drop-down li.narrow .second .inner ul, .shopping_cart_dropdown, .mkd-page-header #lang_sel ul ul, .mkd-top-bar #lang_sel ul ul, .mkd-drop-down .wide.wide_background .second, .mkd-drop-down > ul > li.narrow > .second > .inner > ul, .mkd-drop-down > ul > li.wide > .second > .inner > ul { background-color: rgba(255, 255, 255, 1);border-color: rgba(255, 255, 255, 1);}
+
+.mkd-header-vertical .mkd-header-vertical .mkd-vertical-menu-area-inner { text-align: center;}
+
+.mkd-search-opener > *:not(.mkd-search-icon-text) { font-size: 18px!important;}
+
+a.mkd-side-menu-button-opener { font-size: 25px!important;}
+
+.mkd-light-header .mkd-page-header > div:not(.mkd-sticky-header) .mkd-side-menu-button-opener,
+			.mkd-light-header.mkd-header-style-on-scroll .mkd-page-header .mkd-side-menu-button-opener,
+			.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener { color: #ffffff !important;}
+
+.mkd-side-menu, .mkd-side-area-uncovered-from-content .mkd-side-menu, .mkd-side-menu-slide-from-right .mkd-side-menu { background-color: #f0f0ef;}
+
+.mkd-side-menu a.mkd-close-side-menu span, .mkd-side-menu a.mkd-close-side-menu i { color: #000000;}
+
+.mkd-side-menu a.mkd-close-side-menu { height: 25px;width: 25px;line-height: 25px;padding: 0;}
+
+.mkd-side-menu a.mkd-close-side-menu span, .mkd-side-menu a.mkd-close-side-menu i { font-size: 25px;height: 25px;width: 25px;line-height: 25px;}
+
+.mkd-title .mkd-title-holder h1 { font-family: Fira Sans;text-transform: capitalize;font-style: normal;font-weight: 700;}
+
+.mkd-title .mkd-title-holder .mkd-subtitle { color: #ffffff;font-family: Lato;font-size: 19px;line-height: 32px;text-transform: none;font-style: normal;font-weight: 400;}
+
+.mkd-title .mkd-title-holder .mkd-breadcrumbs a, .mkd-title .mkd-title-holder .mkd-breadcrumbs span { color: #9b9a9a;font-family: Fira Sans;font-size: 13px;line-height: 30px;text-transform: uppercase;font-style: normal;font-weight: 400;}
+
+.mkd-title .mkd-title-holder .mkd-breadcrumbs a:hover { color: #221f1b;}
+
