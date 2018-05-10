@@ -8,11 +8,48 @@
 
 .mkd-content .mkd-content-inner > .mkd-container > .mkd-container-inner { padding-top: 66px;}
 
+.mkd-header-standard .mkd-page-header .mkd-logo-wrapper a { max-height: 45px;}
+
+.mkd-header-standard .mkd-page-header .mkd-menu-area { background-color: rgba(117, 117, 117, 1);height: 50px;}
+
 .mkd-header-standard-extended .mkd-page-header .mkd-logo-area .mkd-grid .mkd-vertical-align-containers { border: 0;}
+
+.mkd-page-header .mkd-sticky-header .mkd-main-menu > ul > li > a, .mkd-page-header .mkd-sticky-header .mkd-main-menu > ul > li.mkd-active-item > a, .mkd-page-header .mkd-sticky-header .mkd-main-menu > ul > li:hover > a { color: #ffffff;}
+
+.mkd-page-header .mkd-sticky-header .mkd-side-menu-button-opener, .mkd-page-header .mkd-sticky-header .mkd-search-opener, .mkd-page-header .mkd-sticky-header .mkd-side-menu-button-opener:hover, .mkd-page-header .mkd-sticky-header .mkd-search-opener:hover { color: #ffffff;}
+
+
+            .mkd-main-menu.mkd-default-nav > ul > li > a,
+            .mkd-page-header #lang_sel > ul > li > a,
+            .mkd-page-header #lang_sel_click > ul > li > a,
+            .mkd-page-header #lang_sel ul > li:hover > a { color: #ffffff;}
+
+
+            .mkd-main-menu.mkd-default-nav > ul > li:hover > a,
+            .mkd-main-menu.mkd-default-nav > ul > li.mkd-active-item:hover > a,
+            body:not(.mkd-menu-item-first-level-bg-color) .mkd-main-menu.mkd-default-nav > ul > li:hover > a,
+            body:not(.mkd-menu-item-first-level-bg-color) .mkd-main-menu.mkd-default-nav > ul > li.mkd-active-item:hover > a,
+            .mkd-page-header #lang_sel ul li a:hover,
+            .mkd-page-header #lang_sel_click > ul > li a:hover { color: #fdc94b;}
+
+
+            .mkd-main-menu.mkd-default-nav > ul > li.mkd-active-item > a,
+			body:not(.mkd-menu-item-first-level-bg-color) .mkd-main-menu.mkd-default-nav > ul > li.mkd-active-item > a { color: #fdc94b;}
+
+
+            .mkd-dark-header .mkd-main-menu.mkd-default-nav > ul > li:hover > a,
+			.mkd-dark-header .mkd-main-menu.mkd-default-nav > ul > li.mkd-active-item:hover > a
+			 { color: #ffffff!important;}
 
 .mkd-full-width-wide-menu .mkd-drop-down .wide .second, .mkd-drop-down .second .inner > ul, .mkd-drop-down .second .inner ul li ul, .mkd-drop-down li.narrow .second .inner ul, .shopping_cart_dropdown, .mkd-page-header #lang_sel ul ul, .mkd-top-bar #lang_sel ul ul, .mkd-drop-down .wide.wide_background .second, .mkd-drop-down > ul > li.narrow > .second > .inner > ul, .mkd-drop-down > ul > li.wide > .second > .inner > ul { background-color: rgba(255, 255, 255, 1);border-color: rgba(255, 255, 255, 1);}
 
 .mkd-header-vertical .mkd-header-vertical .mkd-vertical-menu-area-inner { text-align: center;}
+
+.mkd-mobile-header .mkd-mobile-header-inner { height: 50px;}
+
+.mkd-mobile-header .mkd-mobile-nav a, .mkd-mobile-header .mkd-mobile-nav h4 { color: #ffffff;}
+
+.mkd-mobile-header .mkd-mobile-logo-wrapper a { max-height: 45px;}
 
 .mkd-search-opener > *:not(.mkd-search-icon-text) { font-size: 18px!important;}
 
