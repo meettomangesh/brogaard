@@ -45,11 +45,23 @@
 
 .mkd-header-vertical .mkd-header-vertical .mkd-vertical-menu-area-inner { text-align: center;}
 
-.mkd-mobile-header .mkd-mobile-header-inner { height: 50px;}
+.mkd-mobile-header .mkd-mobile-header-inner { height: 50px;background-color: #757575;}
+
+.mkd-mobile-header .mkd-mobile-nav { background-color: #757575;}
 
 .mkd-mobile-header .mkd-mobile-nav a, .mkd-mobile-header .mkd-mobile-nav h4 { color: #ffffff;}
 
-.mkd-mobile-header .mkd-mobile-logo-wrapper a { max-height: 45px;}
+            @media only screen and (max-width: 1000px) {
+            .mkd-mobile-header .mkd-mobile-logo-wrapper a { height: 50px !important;}
+
+            }
+                    @media only screen and (max-width: 480px) {
+            .mkd-mobile-header .mkd-mobile-logo-wrapper a { height: 45px !important;}
+
+            }
+        .mkd-mobile-header .mkd-mobile-logo-wrapper a { max-height: 45px;}
+
+.mkd-mobile-header .mkd-mobile-menu-opener a { color: #ffffff;font-size: 40px;}
 
 .mkd-search-opener > *:not(.mkd-search-icon-text) { font-size: 18px!important;}
 
