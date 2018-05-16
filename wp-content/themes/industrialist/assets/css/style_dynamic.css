@@ -18,7 +18,7 @@
             .mkd-main-menu.mkd-default-nav > ul > li > a,
             .mkd-page-header #lang_sel > ul > li > a,
             .mkd-page-header #lang_sel_click > ul > li > a,
-            .mkd-page-header #lang_sel ul > li:hover > a { color: #ffffff;}
+            .mkd-page-header #lang_sel ul > li:hover > a { color: #ffffff;font-size: 16px;font-weight: 300;}
 
 
             .mkd-main-menu.mkd-default-nav > ul > li:hover > a,
@@ -38,6 +38,8 @@
 			 { color: #ffffff!important;}
 
 .mkd-full-width-wide-menu .mkd-drop-down .wide .second, .mkd-drop-down .second .inner > ul, .mkd-drop-down .second .inner ul li ul, .mkd-drop-down li.narrow .second .inner ul, .shopping_cart_dropdown, .mkd-page-header #lang_sel ul ul, .mkd-top-bar #lang_sel ul ul, .mkd-drop-down .wide.wide_background .second, .mkd-drop-down > ul > li.narrow > .second > .inner > ul, .mkd-drop-down > ul > li.wide > .second > .inner > ul { background-color: rgba(255, 255, 255, 1);border-color: rgba(255, 255, 255, 1);}
+
+.mkd-drop-down .wide .second .inner > ul > li > a { color: #ffffff;}
 
 .mkd-header-vertical .mkd-header-vertical .mkd-vertical-menu-area-inner { text-align: center;}
 
