@@ -69,9 +69,9 @@ a.mkd-side-menu-button-opener { font-size: 25px!important;}
 			.mkd-light-header.mkd-header-style-on-scroll .mkd-page-header .mkd-side-menu-button-opener,
 			.mkd-light-header .mkd-top-bar .mkd-side-menu-button-opener { color: #ffffff !important;}
 
-.mkd-side-menu, .mkd-side-area-uncovered-from-content .mkd-side-menu, .mkd-side-menu-slide-from-right .mkd-side-menu { background-color: #f0f0ef;}
+.mkd-side-menu, .mkd-side-area-uncovered-from-content .mkd-side-menu, .mkd-side-menu-slide-from-right .mkd-side-menu { background-color: #1d1d1c;}
 
-.mkd-side-menu a.mkd-close-side-menu span, .mkd-side-menu a.mkd-close-side-menu i { color: #000000;}
+.mkd-side-menu a.mkd-close-side-menu span, .mkd-side-menu a.mkd-close-side-menu i { color: #ffffff;}
 
 .mkd-side-menu a.mkd-close-side-menu { height: 25px;width: 25px;line-height: 25px;padding: 0;}
 
