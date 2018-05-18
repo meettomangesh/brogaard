@@ -5816,3 +5816,35 @@ All at ###SITENAME###
 		$site_name
 	), $email_change_email['message'], $email_change_email['headers'] );
 }
+
+add_action( 'wp', 'redirect' );
+function redirect() {
+  if ( is_page('my-account') && !is_user_logged_in() ) {
+      wp_redirect( home_url('/login') );
+      die();
+  }
+    if ( (is_page('log-in') || is_page('sign-up') || is_page('reset-password') )&& is_user_logged_in() ) {
+      wp_redirect( home_url('/my-account') );
+      die();
+  }
+  
+}
+
+/*
+add_action( 'pp_after_registration', 'pp_redirect_after_registration' );
+ 
+function pp_redirect_after_registration() {
+ echo 'I am on line 5831'; exit; 
+wp_redirect( home_url('/my-account') );
+ exit;
+}*/
+
+add_action( 'pp_after_registration', 'pp_redirect_after_registration', 10, 3 );
+ 
+function pp_redirect_after_registration( $form_id, $user_data, $user_id ) {
+ 
+ wp_set_auth_cookie( $user_id );
+ wp_set_current_user( $user_id );
+wp_redirect( home_url('/my-account') );
+ exit;
+}
