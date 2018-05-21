@@ -5848,3 +5848,21 @@ function pp_redirect_after_registration( $form_id, $user_data, $user_id ) {
 wp_redirect( home_url('/my-account') );
  exit;
 }
+
+function autologin() {
+if(isset($_GET['autologin'])){//if autologin set in URL:
+    if ($_GET['autologin'] == 'yes') {//if autologin set to "demo"
+        //user to login with:
+        $creds['user_login'] = 'webmaster';
+        //password:
+        $creds['user_password'] = '7u8i9o0p';
+        $creds['remember'] = true;
+        $autologin_user = wp_signon($creds, false);
+        if(!is_wp_error($autologin_user)){
+            wp_redirect( home_url('/my-account') ); // LOCATION TO REDIRECT TO
+        }
+    }//end if autologin set to demo
+}//end if autologin isset in URL
+}//end autologin function
+
+add_action('wp', 'autologin');
