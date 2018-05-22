@@ -1,8 +1,12 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /brogaard/
+RewriteBase /store/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /brogaard/index.php [L]
+RewriteRule . /store/index.php [L]
+</IfModule>
+
+<IfModule mod_php5.c>
+php_value max_execution_time 300
 </IfModule>
